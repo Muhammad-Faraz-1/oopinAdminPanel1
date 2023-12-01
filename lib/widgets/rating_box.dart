@@ -13,7 +13,7 @@ class RatingBox extends StatelessWidget {
     return Stack(
       children: [
         Container(
-          height: screenHeight>1400?200:screenHeight>1300?180:150,
+          height: screenHeight>1400?230:screenHeight>1300?180:150,
           width: screenWidth>1400?220:screenWidth>1300?170:200,
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(15),

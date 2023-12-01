@@ -28,7 +28,7 @@ class FavouriteCity extends StatelessWidget {
               children: [
                 Container(
                   height: 140,
-                  width: 210,
+                  width: 200,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(5),
                     color: Colors.transparent,

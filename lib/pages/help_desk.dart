@@ -4,6 +4,8 @@ import 'package:opin_app/pages/request_feature.dart';
 import 'package:opin_app/statemanager/provider.dart';
 import 'package:opin_app/widgets/contactus.dart';
 import 'package:opin_app/widgets/multi.dart';
+import 'package:opin_app/widgets/top_bar.dart';
+import 'package:opin_app/widgets/user_table.dart';
 import 'package:provider/provider.dart';
 
 class HelpDesk extends StatelessWidget {
@@ -11,206 +13,130 @@ class HelpDesk extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double screenWidth = MediaQuery.of(context).size.width;
+    double screenHeight = MediaQuery.of(context).size.height;
     final Provider11 = Provider.of<Provider1>(context);
     return Container(
       child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+        padding: const EdgeInsets.symmetric(horizontal: 10,vertical: 10),
         child: Column(
           children: [
-            Multi(
-                color: const Color.fromARGB(255, 255, 255, 255),
-                subtitle: 'Help Desk',
-                weight: FontWeight.w500,
-                size: 6),
-            const SizedBox(
-              height: 15,
-            ),
-            Container(
-               decoration: BoxDecoration(
-                       borderRadius: BorderRadius.circular(25),
-                      color: const Color.fromARGB(255, 252, 145, 63)),
-              child: Padding(
-                padding: const EdgeInsets.all(2),
-                child: Container(
-                  width: 600,
-
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(25),
-                      color: const Color.fromARGB(255, 3, 71, 80)),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Container(
-                        height: 50,
-                        width: 200,
-                        decoration: BoxDecoration(
-                          borderRadius: const BorderRadius.only(topLeft:Radius.circular(25),bottomLeft:Radius.circular(25)  ),
-                          // borderRadius: BorderRadius.circular(25),
-                          color: Provider11.status == 1
-                              ? const Color.fromARGB(255, 252, 145, 63)
-                              : Provider11.status == 2
-                                  ? const Color.fromARGB(255, 255, 255, 255)
-                                  : Provider11.status == 3
-                                      ? const Color.fromARGB(255, 255, 255, 255)
-                                      : const Color.fromARGB(255, 255, 255, 255),
-                        ),
-                        child: TextButton(
-                          onPressed: () {
-                            Provider11.currentpressed(1);
-                          },
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Container(
-                                height: 20,
-                                width: 20,
-                                child: Image.asset('assets/phone.png',color: Provider11.status == 1
-                                    ? const Color.fromARGB(255, 255, 255, 255)
-                                    : Provider11.status == 2
-                                        ? const Color.fromARGB(255, 252, 145, 63)
-                                        : Provider11.status == 3
-                                            ? const Color.fromARGB(255, 252, 145, 63)
-                                            : const Color.fromARGB(255, 252, 145, 63) ,),
+            TopBar(),
+            Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    Container(
+                      height: 50,
+                      width: 350,
+                      
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(vertical: 10),
+                        child: Row(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            GestureDetector(
+                              onTap: () {
+                                Provider11.fordesk('contact');
+                              },
+                              child: Container(
+                                height: 50,
+                                width: 100,
+                                decoration: BoxDecoration(
+                                  color: Provider11.mpage=='contact'?const Color.fromARGB(255, 3, 71, 80):Colors.white,
+                                  borderRadius: BorderRadius.circular(5),
+                                ),
+                                child: Center(
+                                  child: Multi(
+                                      color: Provider11.mpage=='contact'?Colors.white:Colors.black,
+                                      subtitle: 'Contact Us',
+                                      weight: FontWeight.w500,
+                                      size: 4),
+                                ),
                               ),
-                              const SizedBox(width: 5),
-                              Multi(
-                                  color: Provider11.status == 1
-                                      ? const Color.fromARGB(255, 255, 255, 255)
-                                      : Provider11.status == 2
-                                          ? const Color.fromARGB(255, 252, 145, 63)
-                                          : Provider11.status == 3
-                                              ? const Color.fromARGB(255, 252, 145, 63)
-                                              : const Color.fromARGB(255, 252, 145, 63),
-                                  subtitle: 'Contact Us',
-                                  weight: FontWeight.w400,
-                                  size: 4),
-                            ],
-                          ),
+                            ),
+                            GestureDetector(
+                              onTap: () {
+                                Provider11.fordesk('claim');
+                              },
+                              child: Container(
+                                height: 50,
+                                width: 100,
+                                decoration: BoxDecoration(
+                                  color: Provider11.mpage=='claim'?const Color.fromARGB(255, 3, 71, 80):Colors.white,
+                                   borderRadius: BorderRadius.circular(5),
+                                ),
+                                child: Center(
+                                  child: Multi(
+                                      color: Provider11.mpage=='claim'?Colors.white:Colors.black,
+                                      subtitle: 'Claim',
+                                      weight: FontWeight.w500,
+                                      size: 4),
+                                ),
+                              ),
+                            ),
+                            GestureDetector(
+                              onTap: () {
+                                Provider11.fordesk('request');
+                              },
+                              child: Container(
+                                height: 50,
+                                width: 150,
+                                decoration: BoxDecoration(
+                                  color: Provider11.mpage=='request'?const Color.fromARGB(255, 3, 71, 80):Colors.white,
+                                   borderRadius: BorderRadius.circular(5),
+                                ),
+                                child: Center(
+                                  child: Multi(
+                                      color: Provider11.mpage=='request'?Colors.white:Colors.black,
+                                      subtitle: 'Reaquest Feature',
+                                      weight: FontWeight.w500,
+                                      size: 4),
+                                ),
+                              ),
+                            ),
+                          ],
                         ),
                       ),
-                      Container(
-                        height: 50,
-                        width: 200,
-                        decoration: BoxDecoration(
-                          // borderRadius: BorderRadius.circular(25),
-                          color: Provider11.status == 1
-                              ? const Color.fromARGB(255, 255, 255, 255)
-                              : Provider11.status == 2
-                                  ? const Color.fromARGB(255, 252, 145, 63)
-                                  : Provider11.status == 3
-                                      ? const Color.fromARGB(255, 255, 255, 255)
-                                      : const Color.fromARGB(255, 255, 255, 255),
-                        ),
-                        child: TextButton(
-                          onPressed: () {
-                            Provider11.currentpressed(2);
-                          },
-                          child: Row(mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Container(
-                                height: 20,
-                                width: 20,
-                                child: Image.asset('assets/warning.png',color: Provider11.status == 1
-                                    ? const Color.fromARGB(255, 252, 145, 63)
-                                    : Provider11.status == 2
-                                        ? Color.fromARGB(255, 255, 255, 255)
-                                        : Provider11.status == 3
-                                            ? const Color.fromARGB(255, 252, 145, 63)
-                                            : const Color.fromARGB(255, 252, 145, 63) ,),
-                              ),
-                              const SizedBox(width: 5),
-                              Multi(
-                                  color: Provider11.status == 1
-                                      ? const Color.fromARGB(255, 252, 145, 63)
-                                      : Provider11.status == 2
-                                          ? const Color.fromARGB(255, 255, 255, 255)
-                                          : Provider11.status == 3
-                                              ? const Color.fromARGB(255, 252, 145, 63)
-                                              : const Color.fromARGB(255, 252, 145, 63),
-                                  subtitle: 'Report an Issue',
-                                  weight: FontWeight.w400,
-                                  size: 4),
-                            ],
+                    ),
+                    Container(
+                      height: 35,
+                      width: 280,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(5),
+                          color: Colors.white,
+                          boxShadow: [
+                            BoxShadow(
+                                blurRadius: 5,
+                                color: Colors.black.withOpacity(0.2),
+                                spreadRadius: 2,
+                                offset: Offset(2, 2))
+                          ]),
+                      child: Row(
+                        //mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          SizedBox(
+                            width: 5,
                           ),
-                        ),
-                      ),
-                      Container(
-                        height: 50,
-                        width: 200,
-                        decoration: BoxDecoration(
-                          borderRadius: const BorderRadius.only(topRight:Radius.circular(25),bottomRight:Radius.circular(25)  ),
-                          // borderRadius: BorderRadius.circular(25),
-                          color: Provider11.status == 3
-                              ? const Color.fromARGB(255, 252, 145, 63)
-                              : Provider11.status == 1
-                                  ? const Color.fromARGB(255, 255, 255, 255)
-                                  : Provider11.status == 2
-                                      ? const Color.fromARGB(255, 255, 255, 255)
-                                      : const Color.fromARGB(255, 255, 255, 255),
-                        ),
-                        child: TextButton(
-                          onPressed: () {
-                            Provider11.currentpressed(3);
-                          },
-                          child: Row(mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Container(
-                                height: 20,
-                                width: 20,
-                                child: Image.asset('assets/application.png',color: Provider11.status == 1
-                                    ? const Color.fromARGB(255, 252, 145, 63)
-                                    : Provider11.status == 2
-                                        ? const Color.fromARGB(255, 252, 145, 63)
-                                        : Provider11.status == 3
-                                            ? Color.fromARGB(255, 255, 255, 255)
-                                            : const Color.fromARGB(255, 252, 145, 63) ,),
-                              ),
-                              const SizedBox(width: 5),
-                              Multi(
-                                  color: Provider11.status == 1
-                                      ? const Color.fromARGB(255, 252, 145, 63)
-                                      : Provider11.status == 2
-                                          ? const Color.fromARGB(255, 252, 145, 63)
-                                          : Provider11.status == 3
-                                              ? const Color.fromARGB(255, 255, 255, 255)
-                                              : const Color.fromARGB(255, 252, 145, 63),
-                                  subtitle: 'Request a Feature',
-                                  weight: FontWeight.w400,
-                                  size: 4),
-                            ],
+                          Multi(
+                              color: Colors.black,
+                              subtitle: 'Search:',
+                              weight: FontWeight.w500,
+                              size: 4),
+                          const SizedBox(
+                            width: 10,
                           ),
-                        ),
+                          Container(
+                  height: screenHeight-150,
+                  width: screenWidth-100,
+                  child: Provider11.page=='oopins'?OopinTable():Provider11.page=='users'?UserTable2():UserTable2())
+                        ],
                       ),
-                    ],
-                  ),
+                    )
+                  ],
                 ),
-              ),
-            ),
-            const SizedBox(
-              height: 15,
-            ),
-            Multi(
-                color: Colors.white,
-                subtitle: Provider11.status == 1
-                    ? 'Contact Us'
-                    : Provider11.status == 2
-                        ? 'Report an Issue'
-                        : Provider11.status == 3
-                            ? 'Request a Feature'
-                            : 'Contact Us',
-                weight: FontWeight.w600,
-                size: 5),
-            const SizedBox(
-              height: 15,
-            ),
-            
-            Provider11.status == 1
-                ? const ContactUs()
-                : Provider11.status == 2
-                    ? const ReportIssue()
-                    :Provider11.status == 3
-                    ? const RequestFeature()
-                    :  const ContactUs(),
+
           ],
         ),
       ),

@@ -128,7 +128,7 @@ class _SideBarState extends State<SideBar> {
                   // ),
                   GestureDetector(
                     onTap: () {
-                        Provider11.currentActive(3);
+                        Provider11.currentActive(2);
                       },
                     child: Column(children: [
                       Container(
@@ -149,7 +149,7 @@ class _SideBarState extends State<SideBar> {
                   ),
                   GestureDetector(
                     onTap: () {
-                        Provider11.currentActive(4);
+                        Provider11.currentActive(3);
                       },
                     child: Column(children: [
                       Container(
@@ -168,7 +168,7 @@ class _SideBarState extends State<SideBar> {
                   SizedBox(height: 15,),
                   GestureDetector(
                     onTap: () {
-                        Provider11.currentActive(5);
+                        Provider11.currentActive(4);
                       },
                     child: Column(children: [
                       Container(
@@ -187,7 +187,7 @@ class _SideBarState extends State<SideBar> {
                   SizedBox(height: 15,),
                   GestureDetector(
                      onTap: () {
-                        Provider11.currentActive(6);
+                        Provider11.currentActive(5);
                       },
                     child: Column(children: [
                       Container(
@@ -206,7 +206,7 @@ class _SideBarState extends State<SideBar> {
                   SizedBox(height: 15,),
                       GestureDetector(
                     onTap: () {
-                        Provider11.currentActive(3);
+                        Provider11.currentActive(6);
                       },
                     child: Column(children: [
                       Container(
@@ -225,7 +225,7 @@ class _SideBarState extends State<SideBar> {
                   SizedBox(height: 15,),
                   GestureDetector(
                     onTap: () {
-                        Provider11.currentActive(3);
+                        Provider11.currentActive(7);
                       },
                     child: Column(children: [
                       Container(

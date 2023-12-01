@@ -1,22 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:opin_app/statemanager/provider.dart';
 import 'package:opin_app/widgets/multi.dart';
-import 'package:opin_app/widgets/privacypolicy.dart';
-import 'package:provider/provider.dart';
 
-class PrivacyPolicy extends StatelessWidget {
-  const PrivacyPolicy({super.key});
+class RefundPolicy extends StatelessWidget {
+  const RefundPolicy({super.key});
 
   @override
- Widget build(BuildContext context) {
+  Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(10),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Multi(color: Colors.black, subtitle: 'Privacy Policy', weight: FontWeight.w600, size: 6),
+          Multi(color: Colors.black, subtitle: 'Refund Policy', weight: FontWeight.w600, size: 6),
           SizedBox(height: 10,),
-         Container(
+          Container(
             height: 450,
             // width: double.infinity,
             decoration: BoxDecoration(

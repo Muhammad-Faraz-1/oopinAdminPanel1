@@ -83,7 +83,7 @@ class OopinTable extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 500,
-      // width: 500,
+       width: 500,
       child: const SingleChildScrollView(
         child: Padding(
           padding: EdgeInsets.all(10),

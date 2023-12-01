@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:opin_app/statemanager/provider.dart';
 import 'package:opin_app/widgets/cappbar.dart';
 import 'package:opin_app/widgets/multi.dart';
+import 'package:opin_app/widgets/textfield.dart';
 import 'package:opin_app/widgets/top_bar.dart';
 import 'package:opin_app/widgets/user_table.dart';
 import 'package:provider/provider.dart';
@@ -115,39 +116,7 @@ class UsersPage extends StatelessWidget {
                           const SizedBox(
                             width: 10,
                           ),
-                          Container(
-                            height: 30,
-                            width: 200,
-                            child: TextFormField(
-                              // controller: name_service,
-                              cursorColor: Colors.black,
-                              style: const TextStyle(
-                                  color: Colors.black, fontSize: 15),
-                              decoration: const InputDecoration(
-                                // contentPadding: EdgeInsets.symmetric(
-                                //      horizontal: 5),
-                                hintStyle: TextStyle(
-                                    color: Color.fromARGB(255, 0, 0, 0),
-                                    fontWeight: FontWeight.w300),
-                                focusedBorder: UnderlineInputBorder(
-                                    borderSide: BorderSide(
-                                        width: 3,
-                                        color: Color.fromARGB(
-                                            255, 255, 255, 255))),
-                                enabledBorder: UnderlineInputBorder(
-                                    borderSide: BorderSide(
-                                        width: 3,
-                                        color: Color.fromARGB(
-                                            255, 255, 255, 254))),
-                                hintText: 'Search by Email',
-                                filled: true,
-                                fillColor: Color.fromARGB(255, 255, 255, 255),
-                                border: UnderlineInputBorder(
-                                    borderRadius:
-                                        BorderRadius.all(Radius.circular(15))),
-                              ),
-                            ),
-                          ),
+                          
                         ],
                       ),
                     )

@@ -1,10 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:opin_app/pages/chanrges.dart';
+import 'package:opin_app/pages/privacy_policy.dart';
 import 'package:opin_app/statemanager/provider.dart';
-import 'package:opin_app/widgets/favourite_city_box.dart';
 import 'package:opin_app/widgets/favourite_service_table.dart';
 import 'package:opin_app/widgets/favouritecitytable.dart';
+import 'package:opin_app/widgets/media.dart';
 import 'package:opin_app/widgets/multi.dart';
+import 'package:opin_app/widgets/refund.dart';
+import 'package:opin_app/widgets/slider.dart';
+import 'package:opin_app/widgets/terms.dart';
 import 'package:opin_app/widgets/top_bar.dart';
 import 'package:provider/provider.dart';
 
@@ -15,6 +19,7 @@ class InAppManagement extends StatelessWidget {
   Widget build(BuildContext context) {
     double screenWidth = MediaQuery.of(context).size.width;
     double screenHeight = MediaQuery.of(context).size.height;
+    // ignore: non_constant_identifier_names
     final Provider11 = Provider.of<Provider1>(context);
     return Container(
       height: double.infinity,
@@ -29,7 +34,7 @@ class InAppManagement extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
             const TopBar(),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             Row(
@@ -73,19 +78,67 @@ class InAppManagement extends StatelessWidget {
                     const SizedBox(
                       height: 10,
                     ),
-                    Multi(
-                        color: Colors.black,
-                        subtitle: 'Privacy Policy',
-                        weight: FontWeight.w300,
-                        size: 4),
+                    GestureDetector(
+                      onTap: () {
+                        Provider11.userpage3('privacy');
+                      },
+                      child: Multi(
+                          color: Colors.black,
+                          subtitle: 'Privacy Policy',
+                          weight: FontWeight.w300,
+                          size: 4),
+                    ),
                     const SizedBox(
                       height: 10,
                     ),
-                    Multi(
-                        color: Colors.black,
-                        subtitle: 'Social Medai Links',
-                        weight: FontWeight.w300,
-                        size: 4),
+                    GestureDetector(
+                      onTap: () {
+                        Provider11.userpage3('term');
+                      },
+                      child: Multi(
+                          color: Colors.black,
+                          subtitle: 'Terms & Conditions',
+                          weight: FontWeight.w300,
+                          size: 4),
+                    ),
+                    const SizedBox(
+                      height: 10,
+                    ),
+                    GestureDetector(
+                      onTap: () {
+                        Provider11.userpage3('fund');
+                      },
+                      child: Multi(
+                          color: Colors.black,
+                          subtitle: 'Refund Policy',
+                          weight: FontWeight.w300,
+                          size: 4),
+                    ),
+                    const SizedBox(
+                      height: 10,
+                    ),GestureDetector(
+                      onTap: () {
+                        Provider11.userpage3('slider');
+                      },
+                      child: Multi(
+                          color: Colors.black,
+                          subtitle: 'Slider',
+                          weight: FontWeight.w300,
+                          size: 4),
+                    ),
+                    const SizedBox(
+                      height: 10,
+                    ),
+                    GestureDetector(
+                      onTap: () {
+                        Provider11.userpage3('media');
+                      },
+                      child: Multi(
+                          color: Colors.black,
+                          subtitle: 'Social Medai Links',
+                          weight: FontWeight.w300,
+                          size: 4),
+                    ),
                     const SizedBox(
                       height: 10,
                     ),
@@ -95,7 +148,7 @@ class InAppManagement extends StatelessWidget {
                       },
                       child: Multi(
                           color: Colors.black,
-                          subtitle: 'Charges',
+                          subtitle: 'Tariffs',
                           weight: FontWeight.w300,
                           size: 4),
                     ),
@@ -114,11 +167,12 @@ class InAppManagement extends StatelessWidget {
                 const SizedBox(
                   width: 10,
                 ),
+
                 Column(
                   children: [
                     Container(
-                      height: screenHeight-150,
-                      width: screenWidth-250,
+                      height: 520,
+                      width: 1050,
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(5),
                           color: Colors.white,
@@ -133,12 +187,22 @@ class InAppManagement extends StatelessWidget {
                       child: Column(
                         children: [
                           Provider11.page3 == 'city'
-                              ? FavouriteCityTable()
+                              ? const FavouriteCityTable()
                               : Provider11.page3 == 'services'
-                                  ? FavouriteServiceTable()
+                                  ? const FavouriteServiceTable()
                                   : Provider11.page3 == 'charges'
-                                      ? Charges()
-                                      : FavouriteCityTable()
+                                      ? const Charges()
+                                      : Provider11.page3 == 'slider'
+                                      ?  Sliders()
+                                      : Provider11.page3 == 'media'
+                                      ?  Media()
+                                      : Provider11.page3 == 'fund'
+                                      ?  RefundPolicy()
+                                      : Provider11.page3 == 'term'
+                                      ?  TermsAndConditions()
+                                      : Provider11.page3 == 'privacy'
+                                      ?  PrivacyPolicy()
+                                      : const FavouriteCityTable()
                         ],
                       ),
                     )

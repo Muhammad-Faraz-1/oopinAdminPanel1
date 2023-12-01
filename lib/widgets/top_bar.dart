@@ -10,6 +10,8 @@ class TopBar extends StatelessWidget {
   Widget build(BuildContext context) {
     final Provider11 = Provider.of<Provider1>(context);
     return Container(
+      height: 60,
+      
       child:  Column(
         children: [
           Row(
@@ -20,26 +22,18 @@ class TopBar extends StatelessWidget {
             ? 'Dashboard'
             : Provider11.lastAction == 1
                 ? 'Users'
-                : Provider11.lastAction == 2
-                    ? 'OopinPage'
-                    : Provider11.lastAction == 3
+                    : Provider11.lastAction == 2
                         ? 'InApp Management'
-                        : Provider11.lastAction == 'Oopin Complains'
-                        ? 'OopinComplains'
-                        : Provider11.lastAction == 4
+                        : Provider11.lastAction == 3
                             ? 'Recordings'
-                            : Provider11.lastAction == 5
+                            : Provider11.lastAction == 4
                                 ? 'Requests'
-                                : Provider11.lastAction == 6
+                                : Provider11.lastAction == 5
                                     ?'Features'
-                                    : Provider11.lastAction == 7
-                                        ? 'Cities'
-                                        : Provider11.lastAction == 8
+                                        : Provider11.lastAction == 6
                                             ? 'HelpDesk'
-                                            : Provider11.lastAction == 9
+                                            : Provider11.lastAction == 7
                                             ?  'Policy'
-                                            : Provider11.lastAction == 11
-                                                ? 'OopinCompleteInfo'
                                                 : 'Dashboard', 
                         weight: FontWeight.w600, size: 6),
                         Row(

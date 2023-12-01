@@ -5,6 +5,7 @@ class Provider1 extends ChangeNotifier {
   var page = 'users';
   var page2 = 'services';
   var page3 = 'city';
+  var mpage = 'claim';
   var status = 1;
   bool ishover = false;
   bool ishover2 = false;
@@ -40,7 +41,12 @@ class Provider1 extends ChangeNotifier {
   }
   userpage3(var pressed) {
     page3 = pressed;
-    print(page);
+    print(page3);
+    notifyListeners();
+  }
+  fordesk(var pressed) {
+    mpage = pressed;
+    print(mpage);
     notifyListeners();
   }
 
