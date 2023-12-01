@@ -5,11 +5,9 @@ class TopCityColumn extends StatelessWidget {
   const TopCityColumn({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    double screenWidth = MediaQuery.of(context).size.width;
-    double screenHeight = MediaQuery.of(context).size.height;
+ Widget build(BuildContext context) {
     return Container(
-      height: screenHeight>1400?360:screenHeight>1300?330:270,
+      height:273,
       child: SingleChildScrollView(
                               child: Padding(
                                 padding: const EdgeInsets.symmetric(horizontal: 10),

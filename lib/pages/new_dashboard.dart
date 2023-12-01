@@ -90,13 +90,13 @@ class NewDashboard extends StatelessWidget {
                   ],
                 ),
                 SizedBox(height:20),
-                // Row(
-                //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                //       children: [
-                //         TopOopinTable(),
-                //         GraphBox(),
-                //       ],
-                //     )
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        TopOopinTable(),
+                        GraphBox(),
+                      ],
+                    )
               ],
             ),
           ),

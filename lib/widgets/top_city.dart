@@ -9,13 +9,11 @@ class TopCity extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    double screenWidth = MediaQuery.of(context).size.width;
-    double screenHeight = MediaQuery.of(context).size.height;
     return Stack(
       children: [
         Container(
           height: 115,
-          width: screenHeight>1400?310:screenHeight>1300?300:270,
+          width: 300,
           decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(15),
           boxShadow: [
@@ -33,8 +31,8 @@ class TopCity extends StatelessWidget {
               )),
         ),
         Container(
-          height: screenHeight>1400?150:screenHeight>1300?130:100,
-          width: screenHeight>1400?310:screenHeight>1300?300:270,
+          height: 115,
+          width: 300,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(15),
             color: const Color.fromARGB(255, 0, 0, 0).withOpacity(0.5),
