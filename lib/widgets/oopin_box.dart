@@ -122,43 +122,50 @@ class NewOopinBox extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        Container(
-          height: 100,
-          width: 390,
-          decoration: BoxDecoration(
-           color: Colors.green,
-                boxShadow: [
-                  BoxShadow(
-                      blurRadius: 5,
-                      color: Colors.black.withOpacity(0.2),
-                      spreadRadius: 2,
-                      offset: Offset(2, 2))
-                ]
-          ),
-          child: Padding(
-            padding: const EdgeInsets.only(left: 3),
-            child: Container(
-              color: Colors.white,
-              child: Row(
-                children: [
-                  Container(
-                    height: 100,
-                    width: 120,
-                    child: Image.asset('assets/person4.jpg',fit: BoxFit.cover,)),
-                    Padding(
-                      padding: const EdgeInsets.all(10),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Multi(color: Colors.black, subtitle: 'Noman Ali', weight: FontWeight.bold, size: 4),
-                          Multi(color: Colors.black, subtitle: 'nomanaliahmed@gmail.com', weight: FontWeight.w500, size: 3),
-                          Multi(color: Colors.black, subtitle: '3 November 2023', weight: FontWeight.w500, size: 3),
-                          Multi(color: Colors.black, subtitle: 'Manchester', weight: FontWeight.w500, size: 3),
-                          // Multi(color: Colors.black, subtitle: '35 Years', weight: FontWeight.w500, size: 3),
-                        ],
-                      ),
-                    )
-                ],
+        GestureDetector(
+          onTap: (){
+             showDialog(
+                            context: context,
+                            builder: (context) => OopinInfoPage());
+          },
+          child: Container(
+            height: 100,
+            width: 390,
+            decoration: BoxDecoration(
+             color: Colors.green,
+                  boxShadow: [
+                    BoxShadow(
+                        blurRadius: 5,
+                        color: Colors.black.withOpacity(0.2),
+                        spreadRadius: 2,
+                        offset: Offset(2, 2))
+                  ]
+            ),
+            child: Padding(
+              padding: const EdgeInsets.only(left: 3),
+              child: Container(
+                color: Colors.white,
+                child: Row(
+                  children: [
+                    Container(
+                      height: 100,
+                      width: 120,
+                      child: Image.asset('assets/person4.jpg',fit: BoxFit.cover,)),
+                      Padding(
+                        padding: const EdgeInsets.all(10),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Multi(color: Colors.black, subtitle: 'Noman Ali', weight: FontWeight.bold, size: 4),
+                            Multi(color: Colors.black, subtitle: 'nomanaliahmed@gmail.com', weight: FontWeight.w500, size: 3),
+                            Multi(color: Colors.black, subtitle: '3 November 2023', weight: FontWeight.w500, size: 3),
+                            Multi(color: Colors.black, subtitle: 'Manchester', weight: FontWeight.w500, size: 3),
+                            // Multi(color: Colors.black, subtitle: '35 Years', weight: FontWeight.w500, size: 3),
+                          ],
+                        ),
+                      )
+                  ],
+                ),
               ),
             ),
           ),

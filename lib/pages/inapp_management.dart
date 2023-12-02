@@ -158,7 +158,7 @@ class InAppManagement extends StatelessWidget {
                   width: 10,
                 ),
                 const SizedBox(
-                  height: 220,
+                  height: 280,
                   child: VerticalDivider(
                     thickness: 2,
                     color: Color.fromARGB(255, 0, 0, 0),

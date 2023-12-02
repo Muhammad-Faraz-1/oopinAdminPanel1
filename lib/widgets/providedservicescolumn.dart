@@ -7,7 +7,17 @@ class ColumnService extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height:350,
+      decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(15),
+              color: Colors.white,
+              boxShadow: [
+                BoxShadow(
+                    blurRadius: 5,
+                    color: Colors.black.withOpacity(0.2),
+                    spreadRadius: 2,
+                    offset: Offset(2, 2))
+              ]),
+      height:300,
                     width: 350,
       child:  SingleChildScrollView(
                 child: Column(

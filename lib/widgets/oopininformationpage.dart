@@ -22,7 +22,7 @@ class OopinInfoPage extends StatelessWidget {
         child: Padding(
           padding: const EdgeInsets.all(2),
           child: Container(
-            height: 420,
+            height: 450,
             width: 400,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(15),
@@ -50,7 +50,7 @@ class OopinInfoPage extends StatelessWidget {
                   ),
                   TextButton(
                     onPressed: () {
-                      Provider11.currentActive(11);
+                      Provider11.currentActive(7);
                       Navigator.of(context).pop();
                     },
                     child: UnderlineMulti(
