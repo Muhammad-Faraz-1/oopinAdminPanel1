@@ -33,7 +33,7 @@ class TopBar extends StatelessWidget {
                                         : Provider11.lastAction == 6
                                             ? 'HelpDesk'
                                             : Provider11.lastAction == 7
-                                            ?  'Policy'
+                                            ?  'Agora Dashboard'
                                                 : 'Dashboard', 
                         weight: FontWeight.w600, size: 6),
                         Row(

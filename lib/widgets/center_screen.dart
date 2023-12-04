@@ -1,12 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:opin_app/pages/cities.dart';
+import 'package:opin_app/pages/agora.dart';
 import 'package:opin_app/pages/help_desk.dart';
 import 'package:opin_app/pages/inapp_management.dart';
 import 'package:opin_app/pages/new_dashboard.dart';
-import 'package:opin_app/pages/oopin_complain.dart';
-import 'package:opin_app/pages/oopin_page.dart';
-import 'package:opin_app/pages/oopinprofile.dart';
-import 'package:opin_app/pages/policy.dart';
 import 'package:opin_app/pages/recordings.dart';
 import 'package:opin_app/pages/features.dart';
 import 'package:opin_app/pages/requests.dart';
@@ -60,7 +56,7 @@ class screen extends StatelessWidget {
                                         : Provider11.lastAction == 6
                                             ? const HelpDesk()
                                             : Provider11.lastAction == 7
-                                                ? const OopinCompleteInfo()
+                                                ? const Agora()
                                                 : const NewDashboard(),
       ),
     );

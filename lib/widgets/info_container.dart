@@ -107,7 +107,7 @@ class InfoContainer extends StatelessWidget {
                   children: [
                     Multi(
                         color: Colors.black,
-                        subtitle: '+153621848',
+                        subtitle: '+15362',
                         weight: FontWeight.w500,
                         size: 3),
                     SizedBox(

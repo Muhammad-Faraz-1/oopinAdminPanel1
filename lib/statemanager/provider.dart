@@ -7,6 +7,7 @@ class Provider1 extends ChangeNotifier {
   var page3 = 'city';
   var mpage = 'claim';
   var status = 1;
+  var value = 1;
   bool ishover = false;
   bool ishover2 = false;
   String? ServiceName;
@@ -34,16 +35,19 @@ class Provider1 extends ChangeNotifier {
     print(page);
     notifyListeners();
   }
+
   userpage2(var pressed) {
     page2 = pressed;
     print(page);
     notifyListeners();
   }
+
   userpage3(var pressed) {
     page3 = pressed;
     print(page3);
     notifyListeners();
   }
+
   fordesk(var pressed) {
     mpage = pressed;
     print(mpage);
@@ -61,6 +65,7 @@ class Provider1 extends ChangeNotifier {
     print(ishover);
     notifyListeners();
   }
+
   ishovering2(bool hover) {
     ishover2 = hover;
     print(ishover);
@@ -94,6 +99,12 @@ class Provider1 extends ChangeNotifier {
     visible = val;
     print(visible);
     notifyListeners();
+  }
+
+  video(val) {
+    value = val;
+    notifyListeners();
+    print(value);
   }
 }
 
