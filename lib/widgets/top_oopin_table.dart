@@ -7,9 +7,13 @@ class TopOopinTable extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double screenWidth = MediaQuery.of(context).size.width;
+    double screenHeight = MediaQuery.of(context).size.height;
     return Container(
-      height: 400,
-      width: 600,
+      // height:screenHeight>1400?700:screenHeight>800?500:400,
+      //     width: screenWidth>1400?600:screenWidth>1250?190:screenWidth>1100?160:150,
+      width: screenWidth/2.2,
+      height: screenHeight/2.2,
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(15),
           color: Colors.white,
@@ -24,9 +28,9 @@ class TopOopinTable extends StatelessWidget {
         child: Column(
           children: [
             DataTable(
-              dataRowMaxHeight: 65,
-              // dataRowMinHeight: 15,
-              columnSpacing: 90,
+              dataRowMaxHeight: 60,
+              dataRowMinHeight: 15,
+              columnSpacing: screenWidth/15,
               columns: [
               DataColumn(
                   label: Multi(

@@ -6,13 +6,17 @@ class OopinNameCol extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double screenWidth = MediaQuery.of(context).size.width;
+    double screenHeight = MediaQuery.of(context).size.height;
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 5),
       child: Container(
         child: Row(children: [
           Container(
-            height: 35,
-            width: 35,
+            // height: 35,
+            // width: 35,
+            height: screenHeight/18.5,
+            width: screenWidth/39,
             child: CircleAvatar(
               radius: 25,
               backgroundImage: AssetImage('assets/person2.jpg'),

@@ -162,7 +162,7 @@ class NewServiceBox extends StatelessWidget {
                           child: Padding(
                             padding: const EdgeInsets.all(5),
                             child: Container(
-                              height: 100,
+                              height: 110,
                               width: 150,
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(05),
@@ -173,7 +173,7 @@ class NewServiceBox extends StatelessWidget {
                                   // child: Image(image: NetworkImage(serviceimage!),
                                   // opacity:Provider11.buttonVisible==true? AlwaysStoppedAnimation(1.0):AlwaysStoppedAnimation(0.0),
                                   // )
-                                  child: Image.asset('assets/lahore.jpg',
+                                  child: Image.asset('assets/lahore.jpg',fit: BoxFit.cover,
                                   opacity:Provider11.buttonVisible==true? AlwaysStoppedAnimation(0.3):AlwaysStoppedAnimation(1.0),),
                                   ),
                             ),
@@ -193,7 +193,7 @@ class NewServiceBox extends StatelessWidget {
                     ),
                   ),
                   SizedBox(
-                    height: 20,
+                    height: 2,
                   ),
                   Container(
                 height: 30,

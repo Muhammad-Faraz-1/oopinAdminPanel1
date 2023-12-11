@@ -20,16 +20,19 @@ class ColumnService extends StatelessWidget {
       height:300,
                     width: 350,
       child:  SingleChildScrollView(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    ProvidedService(),SizedBox(height: 10,),
-                    ProvidedService(),SizedBox(height: 10,),
-                ProvidedService(),SizedBox(height: 10,),
-                ProvidedService(),
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 20,vertical: 10),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      ProvidedService(),SizedBox(height: 10,),
+                      ProvidedService(),SizedBox(height: 10,),
+                  ProvidedService(),SizedBox(height: 10,),
+                  ProvidedService(),
+                    
                   
-                
-                  ],
+                    ],
+                  ),
                 ),
               ),
     );

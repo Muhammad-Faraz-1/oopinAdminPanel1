@@ -13,8 +13,10 @@ class RatingBox extends StatelessWidget {
     return Stack(
       children: [
         Container(
-          height: screenHeight>1400?230:screenHeight>1300?180:150,
-          width: screenWidth>1400?220:screenWidth>1300?170:200,
+          // height:screenHeight>1400?190:screenHeight>1000?170:150,
+          // width: screenWidth>1400?200:screenWidth>1250?190:screenWidth>1100?170:150,
+          width: screenWidth/6.5,
+          height: screenHeight/4.5,
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(15),
               color: Colors.white,
@@ -42,7 +44,7 @@ class RatingBox extends StatelessWidget {
                         color: Colors.black,
                         subtitle: '4.2',
                         weight: FontWeight.bold,
-                        size: 13),
+                        size: 11),
                     Icon(
                       Icons.star,
                       size: 15,
@@ -56,12 +58,12 @@ class RatingBox extends StatelessWidget {
                         color: Colors.black,
                         subtitle: 'Total Reviews: ',
                         weight: FontWeight.w500,
-                        size: 3),
+                        size: 2.5),
                     Multi(
                         color: Colors.black,
                         subtitle: '175',
                         weight: FontWeight.w500,
-                        size: 4),
+                        size: 3.5),
                   ],
                 ),
                 //     GestureDetector(
@@ -77,10 +79,12 @@ class RatingBox extends StatelessWidget {
           ),
         ),
         Positioned(
-            right: 10,
+            right: 5,
             child: Container(
-                height: 100,
-                width: screenHeight>1400?120:screenHeight>1300?100:80,
+                // height: 80,
+                // width: screenWidth>1400?120:screenWidth>1300?80:60,
+                width: screenWidth/12,
+                height: screenHeight/10,
                 child: Image.asset('assets/medal.png')))
       ],
     );

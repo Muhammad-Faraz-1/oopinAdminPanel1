@@ -14,8 +14,10 @@ class InfoContainer extends StatelessWidget {
     double screenHeight = MediaQuery.of(context).size.height;
     final Provider11 = Provider.of<Provider1>(context);
     return Container(
-      height: screenHeight>1400?200:screenHeight>1300?180:150,
-          width: screenWidth>1400?250:screenWidth>1300?190:150,
+      // height:screenHeight>1400?190:screenHeight>1000?170:150,
+          // width: screenWidth>1400?200:screenWidth>1250?190:screenWidth>1100?160:150,
+          width: screenWidth/6.5,
+          height: screenHeight/4.5,
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(15),
           color: Colors.white,
@@ -60,8 +62,10 @@ class InfoContainer extends StatelessWidget {
                   child: Padding(
                     padding: const EdgeInsets.only(right: 10),
                     child: Container(
-                      height: 15,
-                      width: 15,
+                      // height: 15,
+                      // width: 15,
+                      height: screenHeight/50,
+                      width: screenWidth/91,
                       child: Provider11.visible == 1
                           ? Icon(
                               Icons.visibility,

@@ -8,10 +8,12 @@ class TopBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double screenWidth = MediaQuery.of(context).size.width;
+    double screenHeight = MediaQuery.of(context).size.height;
     final Provider11 = Provider.of<Provider1>(context);
     return Container(
-      height: 60,
-      
+      // height: 60,
+      height: screenHeight/9,
       child:  Column(
         children: [
           Row(

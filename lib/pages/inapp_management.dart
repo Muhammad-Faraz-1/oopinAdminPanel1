@@ -70,14 +70,6 @@ class InAppManagement extends StatelessWidget {
                     const SizedBox(
                       height: 10,
                     ),
-                    Multi(
-                        color: Colors.black,
-                        subtitle: 'Customer Details',
-                        weight: FontWeight.w300,
-                        size: 4),
-                    const SizedBox(
-                      height: 10,
-                    ),
                     GestureDetector(
                       onTap: () {
                         Provider11.userpage3('privacy');
@@ -158,7 +150,7 @@ class InAppManagement extends StatelessWidget {
                   width: 10,
                 ),
                 const SizedBox(
-                  height: 280,
+                  height: 260,
                   child: VerticalDivider(
                     thickness: 2,
                     color: Color.fromARGB(255, 0, 0, 0),

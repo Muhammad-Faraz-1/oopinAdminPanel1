@@ -28,10 +28,13 @@ class _DropDownState extends State<DropDown> {
 
   @override
   Widget build(BuildContext context) {
+    double screenWidth = MediaQuery.of(context).size.width;
+    double screenHeight = MediaQuery.of(context).size.height;
     final Provider11 = Provider.of<Provider1>(context);
     return DropdownButtonHideUnderline(
       child: Container(
-        width: 150,
+        // width: 150,
+        width: screenWidth/9.5,
         child: DropdownButton(
           dropdownColor: Color.fromARGB(255, 255, 255, 255),
           // Initial Value

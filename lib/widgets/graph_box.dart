@@ -7,9 +7,13 @@ class GraphBox extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double screenWidth = MediaQuery.of(context).size.width;
+    double screenHeight = MediaQuery.of(context).size.height;
     return Container(
-      height:400,
-      width: 600,
+      // height:400,
+      // width: 600,
+      height: screenHeight/2.2,
+      width: screenWidth/2.5,
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(15),
           color: Colors.white,
@@ -28,10 +32,12 @@ class GraphBox extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Multi(color: Colors.black, subtitle: 'Revenue', weight: FontWeight.w600, size: 6),
+                Multi(color: Colors.black, subtitle: 'Revenue', weight: FontWeight.w600, size: 5),
                 Container(
-                  height: 50,
-                  width: 100,
+                  // height: 50,
+                  // width: 100,
+                  width: screenWidth/13,
+                  height: screenHeight/15,
                   child: DropDown(),
                   // child: Row(
                   //   children: [
@@ -44,13 +50,15 @@ class GraphBox extends StatelessWidget {
             ),
             Row(
               children: [
-                Multi(color: const Color.fromARGB(255, 54, 69, 79), subtitle: '\$112312315', weight: FontWeight.w700, size: 7),
+                Multi(color: const Color.fromARGB(255, 54, 69, 79), subtitle: '\$112312315', weight: FontWeight.w700, size: 6),
                 SizedBox(width: 10,),
                 Row(
                   children: [
                     Container(
-                      height: 15,
-                      width: 15,
+                      // height: 15,
+                      // width: 15,
+                      height: screenHeight/50,
+                      width: screenWidth/90,
                       child: Image.asset('assets/increase.png',
                           color: Colors.green),
                     ),
@@ -67,8 +75,10 @@ class GraphBox extends StatelessWidget {
               ],
             ),
             Container(
-              height: 250,
-              width: 700,
+              // height: 250,
+              // width: 700,
+              height: screenHeight/4.5,
+              width: screenWidth/2,
               color: Colors.green,
             )
           ]

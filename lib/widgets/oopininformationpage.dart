@@ -50,7 +50,7 @@ class OopinInfoPage extends StatelessWidget {
                   ),
                   TextButton(
                     onPressed: () {
-                      Provider11.currentActive(7);
+                      Provider11.currentActive(8);
                       Navigator.of(context).pop();
                     },
                     child: UnderlineMulti(

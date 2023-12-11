@@ -3,6 +3,7 @@ import 'package:opin_app/pages/agora.dart';
 import 'package:opin_app/pages/help_desk.dart';
 import 'package:opin_app/pages/inapp_management.dart';
 import 'package:opin_app/pages/new_dashboard.dart';
+import 'package:opin_app/pages/oopinprofile.dart';
 import 'package:opin_app/pages/recordings.dart';
 import 'package:opin_app/pages/features.dart';
 import 'package:opin_app/pages/requests.dart';
@@ -25,7 +26,7 @@ class screen extends StatelessWidget {
         width: screenWidth - 90,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(15),
-        color: Colors.white,
+          color: Colors.white,
         ),
         // color: const Color.fromARGB(255, 3, 71, 80),
         // child: Dashboard()
@@ -45,19 +46,21 @@ class screen extends StatelessWidget {
             ? const NewDashboard()
             : Provider11.lastAction == 1
                 ? const UsersPage()
-                    : Provider11.lastAction == 2
-                        ? const InAppManagement()
-                        : Provider11.lastAction == 3
-                            ? const RecordingsPage()
-                            : Provider11.lastAction == 4
-                                ? Request()
-                                : Provider11.lastAction == 5
-                                    ? const Features()
-                                        : Provider11.lastAction == 6
-                                            ? const HelpDesk()
-                                            : Provider11.lastAction == 7
-                                                ? const Agora()
-                                                : const NewDashboard(),
+                : Provider11.lastAction == 2
+                    ? const InAppManagement()
+                    : Provider11.lastAction == 3
+                        ? const RecordingsPage()
+                        : Provider11.lastAction == 4
+                            ? Request()
+                            : Provider11.lastAction == 5
+                                ? const Features()
+                                : Provider11.lastAction == 6
+                                    ? const HelpDesk()
+                                    : Provider11.lastAction == 7
+                                        ? const Agora()
+                                        : Provider11.lastAction == 8
+                                            ? const OopinCompleteInfo()
+                                            : const NewDashboard(),
       ),
     );
   }

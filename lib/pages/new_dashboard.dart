@@ -63,7 +63,7 @@ class NewDashboard extends StatelessWidget {
                       ],
                     ),
                     Container(
-                      height: 320,
+                      // height:screenHeight>1400?250:screenHeight>1000?380:350,
                       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(15),
           color: Colors.white,

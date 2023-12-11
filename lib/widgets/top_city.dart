@@ -9,11 +9,15 @@ class TopCity extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double screenWidth = MediaQuery.of(context).size.width;
+    double screenHeight = MediaQuery.of(context).size.height;
     return Stack(
       children: [
         Container(
-          height: 115,
-          width: 300,
+          // height: 110,
+          // width: screenWidth>1400?220:screenWidth>1100?220:180,
+          width: screenWidth/7,
+          height: screenHeight/5.5,
           decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(15),
           boxShadow: [
@@ -31,8 +35,8 @@ class TopCity extends StatelessWidget {
               )),
         ),
         Container(
-          height: 115,
-          width: 300,
+          width: screenWidth/7,
+          height: screenHeight/5.5,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(15),
             color: const Color.fromARGB(255, 0, 0, 0).withOpacity(0.5),
@@ -55,8 +59,8 @@ class TopCity extends StatelessWidget {
                             weight: FontWeight.w600,
                             size: 5),
                             Container(
-                          height: 30,
-                          width: 30,
+                          height: screenHeight/15, 
+                          width: screenWidth/40,
                           child: Image.asset('assets/4-stars.png')),
                       ],
                     ),
@@ -66,8 +70,11 @@ class TopCity extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.all(5),
                 child: Container(
-                  height: 51,
-                  width: 200,
+                  // height: 55,
+                  height: screenHeight/15,
+                  width: screenWidth/8,
+                  // width: 150,
+                  
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(5),
                   color: Colors.black.withOpacity(0.6),
@@ -83,12 +90,12 @@ class TopCity extends StatelessWidget {
                                 color: Colors.white,
                                 subtitle: 'Total Oopins',
                                 weight: FontWeight.w400,
-                                size: 2.5),
+                                size: 2),
                                 Multi(
                                 color: Colors.white,
                                 subtitle: '50',
                                 weight: FontWeight.w500,
-                                size: 5),
+                                size: 4),
                           ],
                         ),
                         Column(
@@ -97,12 +104,12 @@ class TopCity extends StatelessWidget {
                                 color: Colors.white,
                                 subtitle: 'Total Users',
                                 weight: FontWeight.w400,
-                                size: 2.5),
+                                size: 2),
                                 Multi(
                                 color: Colors.white,
                                 subtitle: '150',
                                 weight: FontWeight.w500,
-                                size: 5),
+                                size: 4),
                           ],
                         ),
                       ],

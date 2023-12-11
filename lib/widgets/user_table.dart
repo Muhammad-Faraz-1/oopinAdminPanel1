@@ -8,6 +8,8 @@ class UserTable2 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double screenWidth = MediaQuery.of(context).size.width;
+    double screenHeight = MediaQuery.of(context).size.height;
     return Container(
       height: 500,
       // width: 500,
@@ -81,9 +83,13 @@ class OopinTable extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double screenWidth = MediaQuery.of(context).size.width;
+    double screenHeight = MediaQuery.of(context).size.height;
     return Container(
-      height: 500,
-       width: 500,
+      // height: 500,
+      //  width: 500,
+      height: screenHeight/1.8,
+      width: screenWidth/2.7,
       child: const SingleChildScrollView(
         child: Padding(
           padding: EdgeInsets.all(10),

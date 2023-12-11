@@ -4,6 +4,8 @@ import 'package:opin_app/widgets/multi.dart';
 class Sliders extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    double screenWidth = MediaQuery.of(context).size.width;
+    double screenHeight = MediaQuery.of(context).size.height;
     return Container(
       height: 500,
       width: 1000,
@@ -157,3 +159,4 @@ class _GridViewBuilderExampleState extends State<GridViewBuilderExample> {
     );
   }
 }
+

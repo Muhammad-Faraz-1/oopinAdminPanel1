@@ -29,12 +29,12 @@ class AddTime extends StatelessWidget {
             Column(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Multi(color: Colors.black, subtitle: 'Time', weight: FontWeight.w600, size: 7),SizedBox(height: 20,),
-                Multi(color: Colors.black, subtitle: '2 min', weight: FontWeight.w600, size: 6),
-                 Multi(color: Colors.black, subtitle: '4 min', weight: FontWeight.w600, size: 6),
-                  Multi(color: Colors.black, subtitle: '6 min', weight: FontWeight.w600, size: 6),
-                   Multi(color: Colors.black, subtitle: '8 min', weight: FontWeight.w600, size: 6),
-                    Multi(color: Colors.black, subtitle: '10 min', weight: FontWeight.w600, size: 6),
+                Multi(color: Colors.black, subtitle: 'Time', weight: FontWeight.w500, size: 5),SizedBox(height: 20,),
+                Multi(color: Colors.black, subtitle: '2 min', weight: FontWeight.w500, size: 4),
+                 Multi(color: Colors.black, subtitle: '4 min', weight: FontWeight.w500, size: 4),
+                  Multi(color: Colors.black, subtitle: '6 min', weight: FontWeight.w500, size: 4),
+                   Multi(color: Colors.black, subtitle: '8 min', weight: FontWeight.w500, size: 4),
+                    Multi(color: Colors.black, subtitle: '10 min', weight: FontWeight.w500, size: 4),
             
                     GestureDetector(
                                   onTap: () {
@@ -67,12 +67,12 @@ class AddTime extends StatelessWidget {
             Column(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Multi(color: Colors.black, subtitle: 'Rates', weight: FontWeight.w600, size: 7),SizedBox(height: 20,),
-                Multi(color: Colors.black, subtitle: '4 GBP', weight: FontWeight.w600, size: 6),
-                 Multi(color: Colors.black, subtitle: '7 GPB', weight: FontWeight.w600, size: 6),
-                  Multi(color: Colors.black, subtitle: '10 GBP', weight: FontWeight.w600, size: 6),
-                   Multi(color: Colors.black, subtitle: '13 GPB', weight: FontWeight.w600, size: 6),
-                    Multi(color: Colors.black, subtitle: '15 GBP', weight: FontWeight.w600, size: 6),
+                Multi(color: Colors.black, subtitle: 'Rates', weight: FontWeight.w500, size: 5),SizedBox(height: 20,),
+                Multi(color: Colors.black, subtitle: '4 GBP', weight: FontWeight.w500, size: 4),
+                 Multi(color: Colors.black, subtitle: '7 GPB', weight: FontWeight.w500, size: 4),
+                  Multi(color: Colors.black, subtitle: '10 GBP', weight: FontWeight.w500, size: 4),
+                   Multi(color: Colors.black, subtitle: '13 GPB', weight: FontWeight.w500, size: 4),
+                    Multi(color: Colors.black, subtitle: '15 GBP', weight: FontWeight.w500, size: 4),
             
                     GestureDetector(
                                   onTap: () {
@@ -80,7 +80,7 @@ class AddTime extends StatelessWidget {
                                   },
                                   child: Container(
                                     height:40,
-                                    width: 110,
+                                    width: 130,
                                     decoration: BoxDecoration(
                                       color: const Color.fromARGB(255, 3, 71, 80),
                                        borderRadius: BorderRadius.circular(5),
@@ -105,45 +105,45 @@ class AddTime extends StatelessWidget {
              Column(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Multi(color: Colors.black, subtitle: 'Divisions', weight: FontWeight.w600, size: 7),
+                Multi(color: Colors.black, subtitle: 'Divisions', weight: FontWeight.w500, size: 5),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Multi(color: Colors.black, subtitle: 'Platform ', weight: FontWeight.w600, size: 6),SizedBox(width: 50,),
-                     Multi(color: Colors.black, subtitle: 'Oopins', weight: FontWeight.w600, size: 6),
+                    Multi(color: Colors.black, subtitle: 'Platform ', weight: FontWeight.w500, size: 4),SizedBox(width: 50,),
+                     Multi(color: Colors.black, subtitle: 'Oopins', weight: FontWeight.w500, size: 4),
                   ],
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Multi(color: Colors.black, subtitle: '10%', weight: FontWeight.w600, size: 6),SizedBox(width: 80,),
-                     Multi(color: Colors.black, subtitle: '90%', weight: FontWeight.w600, size: 6),
+                    Multi(color: Colors.black, subtitle: '10%', weight: FontWeight.w500, size: 4),SizedBox(width: 80,),
+                     Multi(color: Colors.black, subtitle: '90%', weight: FontWeight.w500, size: 4),
                   ],
                 ),
                 Row(
                   
                   children: [
-                    Multi(color: Colors.black, subtitle: '10%', weight: FontWeight.w600, size: 6),SizedBox(width: 80,),
-                     Multi(color: Colors.black, subtitle: '90%', weight: FontWeight.w600, size: 6),
+                    Multi(color: Colors.black, subtitle: '10%', weight: FontWeight.w500, size: 4),SizedBox(width: 80,),
+                     Multi(color: Colors.black, subtitle: '90%', weight: FontWeight.w500, size: 4),
                   ],
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Multi(color: Colors.black, subtitle: '10%', weight: FontWeight.w600, size: 6),SizedBox(width: 80,),
-                     Multi(color: Colors.black, subtitle: '90%', weight: FontWeight.w600, size: 6),
+                    Multi(color: Colors.black, subtitle: '10%', weight: FontWeight.w500, size: 4),SizedBox(width: 80,),
+                     Multi(color: Colors.black, subtitle: '90%', weight: FontWeight.w500, size: 4),
                   ],
                 ),Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Multi(color: Colors.black, subtitle: '10%', weight: FontWeight.w600, size: 6),SizedBox(width: 80,),
-                     Multi(color: Colors.black, subtitle: '90%', weight: FontWeight.w600, size: 6),
+                    Multi(color: Colors.black, subtitle: '10%', weight: FontWeight.w500, size: 4),SizedBox(width: 80,),
+                     Multi(color: Colors.black, subtitle: '90%', weight: FontWeight.w500, size: 4),
                   ],
                 ),Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Multi(color: Colors.black, subtitle: '10%', weight: FontWeight.w600, size: 6),SizedBox(width: 80,),
-                     Multi(color: Colors.black, subtitle: '90%', weight: FontWeight.w600, size: 6),
+                    Multi(color: Colors.black, subtitle: '10%', weight: FontWeight.w500, size: 4),SizedBox(width: 80,),
+                     Multi(color: Colors.black, subtitle: '90%', weight: FontWeight.w500, size: 4),
                   ],
                 ),
             
