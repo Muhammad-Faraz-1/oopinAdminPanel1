@@ -27,15 +27,19 @@ class Media extends StatelessWidget {
             Row(
               children: [
                 Container(
-                  height: 50,
-                  width: 50,
+                  // height: 50,
+                  // width: 50,
+                  height: screenHeight/13.02,
+                  width: screenWidth/27.32,
                   child: Image.asset('assets/facebook.png'),
                 ),
+                SizedBox(width: 5,),
                 TextField2(),
+                SizedBox(width: 5,),
                 GestureDetector(
                   child: Container(
-                                  height: 50,
-                                  width: 75,
+                                  height: screenHeight/13.02,
+                                  width: screenWidth/18.21,
                                   decoration: BoxDecoration(
                                     color:const Color.fromARGB(255, 3, 71, 80),
                                      borderRadius: BorderRadius.circular(5),
@@ -57,15 +61,17 @@ class Media extends StatelessWidget {
             Row(
               children: [
                 Container(
-                  height: 50,
-                  width: 50,
+                  height: screenHeight/13.02,
+                  width: screenWidth/27.32,
                   child: Image.asset('assets/instagram.png'),
                 ),
-                 TextField2(),
+                 SizedBox(width: 5,),
+                TextField2(),
+                SizedBox(width: 5,),
                  GestureDetector(
                    child: Container(
-                                  height: 50,
-                                  width: 75,
+                                 height: screenHeight/13.02,
+                                  width: screenWidth/18.21,
                                   decoration: BoxDecoration(
                                     color:const Color.fromARGB(255, 3, 71, 80),
                                      borderRadius: BorderRadius.circular(5),
@@ -87,15 +93,17 @@ class Media extends StatelessWidget {
             Row(
               children: [
                 Container(
-                  height: 50,
-                  width: 50,
+                  height: screenHeight/13.02,
+                  width: screenWidth/27.32,
                   child: Image.asset('assets/twitter.png'),
                 ),
-                 TextField2(),
+                 SizedBox(width: 5,),
+                TextField2(),
+                SizedBox(width: 5,),
                  GestureDetector(
                    child: Container(
-                                  height: 50,
-                                  width: 75,
+                                  height: screenHeight/13.02,
+                                  width: screenWidth/18.21,
                                   decoration: BoxDecoration(
                                     color:const Color.fromARGB(255, 3, 71, 80),
                                      borderRadius: BorderRadius.circular(5),
@@ -117,15 +125,17 @@ class Media extends StatelessWidget {
             Row(
               children: [
                 Container(
-                  height: 50,
-                  width: 50,
+                 height: screenHeight/13.02,
+                  width: screenWidth/27.32,
                   child: Image.asset('assets/pinterest.png'),
                 ),
+                SizedBox(width: 5,),
                 TextField2(),
+                SizedBox(width: 5,),
                 GestureDetector(
                   child: Container(
-                                  height: 50,
-                                  width: 75,
+                                  height: screenHeight/13.02,
+                                  width: screenWidth/18.21,
                                   decoration: BoxDecoration(
                                     color:const Color.fromARGB(255, 3, 71, 80),
                                      borderRadius: BorderRadius.circular(5),
@@ -147,15 +157,17 @@ class Media extends StatelessWidget {
             Row(
               children: [
                 Container(
-                  height: 50,
-                  width: 50,
+                  height: screenHeight/13.02,
+                  width: screenWidth/27.32,
                   child: Image.asset('assets/linkedin.png'),
                 ),
+                SizedBox(width: 5,),
                 TextField2(),
+                SizedBox(width: 5,),
                 GestureDetector(
                   child: Container(
-                                  height: 50,
-                                  width: 75,
+                                  height: screenHeight/13.02,
+                                  width: screenWidth/18.21,
                                   decoration: BoxDecoration(
                                     color:const Color.fromARGB(255, 3, 71, 80),
                                      borderRadius: BorderRadius.circular(5),

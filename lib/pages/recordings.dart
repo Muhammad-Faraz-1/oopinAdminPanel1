@@ -41,8 +41,8 @@ class RecordingsPage extends StatelessWidget {
                     ],
                   ),
                   Container(
-                    height: 35,
-                    width: 280,
+                    height: screenHeight/18.6,
+                    width: screenWidth/4.87,
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(5),
                         color: Colors.white,
@@ -69,8 +69,8 @@ class RecordingsPage extends StatelessWidget {
                           width: 10,
                         ),
                         Container(
-                          height: 30,
-                          width: 200,
+                          height: screenHeight/21.7,
+                          width: screenWidth/6.83,
                           child: TextFormField(
                             // controller: name_service,
                             cursorColor: Colors.black,
@@ -107,8 +107,8 @@ class RecordingsPage extends StatelessWidget {
                 ],
               ),
               Container(
-                height: screenHeight-150,
-                  width: screenWidth-100,
+                height: screenHeight/1.3,
+                  width: screenWidth/1.13,
                 child: SingleChildScrollView(
                   child: Column(
                     children: [

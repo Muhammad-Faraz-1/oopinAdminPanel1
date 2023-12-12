@@ -1,12 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:opin_app/pages/reportanissue.dart';
 import 'package:opin_app/pages/request_feature.dart';
 import 'package:opin_app/statemanager/provider.dart';
 import 'package:opin_app/widgets/claim.dart';
 import 'package:opin_app/widgets/contactus.dart';
-import 'package:opin_app/widgets/contactus_box.dart';
 import 'package:opin_app/widgets/multi.dart';
-import 'package:opin_app/widgets/textfield.dart';
 import 'package:opin_app/widgets/top_bar.dart';
 import 'package:opin_app/widgets/user_table.dart';
 import 'package:provider/provider.dart';
@@ -76,8 +73,8 @@ class HelpDesk extends StatelessWidget {
                 const SizedBox(
                   width: 10,
                 ),
-                const SizedBox(
-                  height: 220,
+                 SizedBox(
+                  height: screenHeight/1.25,
                   child: VerticalDivider(
                     thickness: 2,
                     color: Color.fromARGB(255, 0, 0, 0),
@@ -90,8 +87,8 @@ class HelpDesk extends StatelessWidget {
                 Column(
                   children: [
                     Container(
-                      height: 520,
-                      width: 1050,
+                      height: screenHeight/1.25,
+                      width: screenWidth/1.4,
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(5),
                           color: Colors.white,

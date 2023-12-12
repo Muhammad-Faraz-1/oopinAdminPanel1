@@ -7,10 +7,13 @@ class ContactUs extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double screenWidth = MediaQuery.of(context).size.width;
+    double screenHeight = MediaQuery.of(context).size.height;
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: Container(
-        height: 500,
+        height: screenHeight/1.3,
+        width: screenWidth/1.4,
         child:  SingleChildScrollView(
           child: Padding(
             padding: const EdgeInsets.all(10),
@@ -74,29 +77,19 @@ class ContactUs extends StatelessWidget {
                   ],
                 ),
                 SizedBox(height: 10,),
-                const Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    NewContactUsBox(),
-                    NewContactUsBox(),
-                    NewContactUsBox(),
-                  ],
-                ),
+                ContactUsBox2(),
                 const SizedBox(height: 20,),
-                const Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    NewContactUsBox(),
-                    NewContactUsBox(),
-                    NewContactUsBox(),
-                  ],
-                ),
+                ContactUsBox2(),
                 const SizedBox(height: 20,),
-                const Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    NewContactUsBox(),
-                    NewContactUsBox(),
-                    NewContactUsBox(),
-                  ],
-                ),
+               ContactUsBox2(),
+               const SizedBox(height: 20,),
+               ContactUsBox2(),
+               const SizedBox(height: 20,),
+               ContactUsBox2(),
+               const SizedBox(height: 20,),
+               ContactUsBox2(),
+               const SizedBox(height: 20,),
+               ContactUsBox2(),
               ],
             ),
           ),

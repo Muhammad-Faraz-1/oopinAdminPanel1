@@ -6,6 +6,8 @@ class TermsAndConditions extends StatelessWidget {
 
   @override
    Widget build(BuildContext context) {
+    double screenWidth = MediaQuery.of(context).size.width;
+    double screenHeight = MediaQuery.of(context).size.height;
     return Padding(
       padding: const EdgeInsets.all(10),
       child: Column(
@@ -14,8 +16,10 @@ class TermsAndConditions extends StatelessWidget {
           Multi(color: Colors.black, subtitle: 'Terms & Conditions', weight: FontWeight.w600, size: 6),
           SizedBox(height: 10,),
          Container(
-            height: 450,
+            // height: 450,
             // width: double.infinity,
+            height: screenHeight/1.5,
+            width: screenWidth/1.5,
             decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(15),
                     color: Colors.white,

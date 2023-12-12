@@ -25,6 +25,8 @@ class _GridViewBuilderExampleState extends State<GridViewBuilderExample> {
 
   @override
   Widget build(BuildContext context) {
+    double screenWidth = MediaQuery.of(context).size.width;
+    double screenHeight = MediaQuery.of(context).size.height;
     return Column(
       children: [
         Expanded(
@@ -94,8 +96,8 @@ class _GridViewBuilderExampleState extends State<GridViewBuilderExample> {
 
   static Widget buildContainer(int index, [String img_link = ""]) {
     return Container(
-      height: 200,
-      width: 300,
+      // height: 200,
+      // width: 300,
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(5),
           color: Colors.white,

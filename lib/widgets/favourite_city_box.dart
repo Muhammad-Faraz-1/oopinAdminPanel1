@@ -8,6 +8,8 @@ class FavouriteCity extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double screenWidth = MediaQuery.of(context).size.width;
+    double screenHeight = MediaQuery.of(context).size.height;
     final Provider11 = Provider.of<Provider1>(context);
     return Container(
       decoration: BoxDecoration(
@@ -27,8 +29,10 @@ class FavouriteCity extends StatelessWidget {
             Stack(
               children: [
                 Container(
-                  height: 140,
-                  width: 200,
+                  // height: 140,
+                  // width: 200,
+                  width: screenWidth/7.5,
+                  height: screenHeight/5,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(5),
                     color: Colors.transparent,
@@ -38,16 +42,16 @@ class FavouriteCity extends StatelessWidget {
                     child: Image.asset('assets/blackburn.jpg',fit: BoxFit.cover,)),
                 ),
                 Container(
-                  height: 140,
-                  width: 210,
+                  width: screenWidth/7.5,
+                  height: screenHeight/5,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(5),
                     color: const Color.fromARGB(0, 0, 0, 0).withOpacity(0.5),
                   ),
         ),
         Positioned(
-          left: 15,
-          bottom: 15,
+          left: 10,
+          bottom: 10,
           child: Multi(
                       color: Color.fromARGB(255, 255, 255, 255),
                       subtitle: 'Blackburn',
@@ -70,8 +74,10 @@ class FavouriteCity extends StatelessWidget {
           Provider11.ishovering2(false);
         },
                   child:Provider11.ishover2==false?Container(
-                    height: 50,
-                    width: 210,
+                    // height: 50,
+                    // width: 210,
+                    height: screenHeight/13,
+                    width: screenWidth/7.5,
                     decoration: BoxDecoration(
                       color: Colors.black,
                       borderRadius: BorderRadius.circular(5)
@@ -93,8 +99,10 @@ class FavouriteCity extends StatelessWidget {
                     ),
                   ):
                   Container(
-                    height: 50,
-                    width: 210,
+                    // height: 50,
+                    // width: 210,
+                    height: screenHeight/13,
+                    width: screenWidth/7.5,
                     decoration: BoxDecoration(
                       color: Colors.blue,
                       borderRadius: BorderRadius.circular(5)

@@ -16,8 +16,10 @@ class RefundPolicy extends StatelessWidget {
           Multi(color: Colors.black, subtitle: 'Refund Policy', weight: FontWeight.w600, size: 6),
           SizedBox(height: 10,),
           Container(
-            height: 450,
-            // width: double.infinity,
+            // height: 450,
+            // // width: double.infinity,
+            height: screenHeight/1.5,
+            width: screenWidth/1.5,
             decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(15),
                     color: Colors.white,

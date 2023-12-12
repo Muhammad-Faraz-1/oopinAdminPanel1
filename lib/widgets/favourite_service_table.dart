@@ -32,8 +32,8 @@ class FavouriteServiceTable extends StatelessWidget {
                     width: 10,
                   ),
                   Container(
-                    height: 30,
-                    width: 200,
+                    height: screenHeight/21.5,
+                            width: screenWidth/7,
                     child: TextFormField(
                       // controller: name_service,
                       cursorColor: Colors.black,
@@ -67,6 +67,8 @@ class FavouriteServiceTable extends StatelessWidget {
           ),
         ),
         Container(
+          height: screenHeight/1.5,
+          width: screenWidth/1.1,
           child: const Padding(
             padding: EdgeInsets.symmetric(
               horizontal: 10,

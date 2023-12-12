@@ -8,6 +8,8 @@ class PopularServieBox extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double screenWidth = MediaQuery.of(context).size.width;
+    double screenHeight = MediaQuery.of(context).size.height;
     final Provider11 = Provider.of<Provider1>(context);
     return Container(
       decoration: BoxDecoration(
@@ -27,8 +29,10 @@ class PopularServieBox extends StatelessWidget {
             Stack(
               children: [
                 Container(
-                  height: 140,
-                  width: 210,
+                  // height: 140,
+                  // width: 210,
+                  width: screenWidth/7.5,
+                  height: screenHeight/5,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(5),
                     color: Colors.transparent,
@@ -38,8 +42,10 @@ class PopularServieBox extends StatelessWidget {
                     child: Image.asset('assets/food1.jpg',fit: BoxFit.cover,)),
                 ),
                 Container(
-                  height: 140,
-                  width: 210,
+                  // height: 140,
+                  // width: 210,
+                  width: screenWidth/7.5,
+                  height: screenHeight/5,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(5),
                     color: const Color.fromARGB(0, 0, 0, 0).withOpacity(0.5),
@@ -70,8 +76,10 @@ class PopularServieBox extends StatelessWidget {
           Provider11.ishovering2(false);
         },
                   child:Provider11.ishover2==false?Container(
-                    height: 50,
-                    width: 210,
+                    // height: 50,
+                    // width: 210,
+                    height: screenHeight/13,
+                    width: screenWidth/7.5,
                     decoration: BoxDecoration(
                       color: Colors.black,
                       borderRadius: BorderRadius.circular(5)
@@ -93,8 +101,10 @@ class PopularServieBox extends StatelessWidget {
                     ),
                   ):
                   Container(
-                    height: 50,
-                    width: 210,
+                    // height: 50,
+                    // width: 210,
+                    height: screenHeight/13,
+                    width: screenWidth/7.5,
                     decoration: BoxDecoration(
                       color: Colors.blue,
                       borderRadius: BorderRadius.circular(5)

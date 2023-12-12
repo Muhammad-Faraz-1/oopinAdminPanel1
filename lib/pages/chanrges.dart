@@ -59,9 +59,11 @@ class Charges extends StatelessWidget {
             SizedBox(height: 15),
             
             Container(
-                  height: 390,
-                  width: 1000,
-                  child: Provider11.mpage=='time'?AddTime():Provider11.mpage=='charges'?AddTime():AddTime())
+                  // height: 390,
+                  // width: 1000,
+                  height: screenHeight/1.6,
+                  width: screenWidth/1.3,
+                  child: AddTime())
           ],
         ),
       ),

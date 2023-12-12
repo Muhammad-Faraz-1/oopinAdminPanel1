@@ -23,12 +23,9 @@ class UserTable2 extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  // NewUserBox22(),
-                  // NewUserBox22(),
                   NewUserBox2(),
                    NewUserBox2(),
                   NewUserBox2(),
-                  //  NewUserBox2(),
                 ],
                 
               ),
@@ -39,7 +36,6 @@ class UserTable2 extends StatelessWidget {
                   NewUserBox2(),
                   NewUserBox2(),
                   NewUserBox2(),
-                  //  NewUserBox2(),
                 ],
               ),SizedBox(height: 20,),
               Row(
@@ -48,7 +44,6 @@ class UserTable2 extends StatelessWidget {
                   NewUserBox2(),
                   NewUserBox2(),
                   NewUserBox2(),
-                  //  NewUserBox2(),
                 ],
               ),SizedBox(height: 20,),
               Row(
@@ -57,7 +52,6 @@ class UserTable2 extends StatelessWidget {
                   NewUserBox2(),
                   NewUserBox2(),
                   NewUserBox2(),
-                  //  NewUserBox2(),
                 ],
               ),SizedBox(height: 20,),
               Row(
@@ -66,7 +60,6 @@ class UserTable2 extends StatelessWidget {
                   NewUserBox2(),
                   NewUserBox2(),
                   NewUserBox2(),
-                  //  NewUserBox2(),
                 ],
               ),
             ],
@@ -86,8 +79,6 @@ class OopinTable extends StatelessWidget {
     double screenWidth = MediaQuery.of(context).size.width;
     double screenHeight = MediaQuery.of(context).size.height;
     return Container(
-      // height: 500,
-      //  width: 500,
       height: screenHeight/1.8,
       width: screenWidth/2.7,
       child: const SingleChildScrollView(

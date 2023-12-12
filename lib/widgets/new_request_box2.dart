@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:opin_app/widgets/multi.dart';
-import 'package:opin_app/widgets/oopin_info.dart';
 import 'package:opin_app/widgets/popup.dart';
 
 // class NewRequestBox2 extends StatelessWidget {
@@ -138,9 +137,13 @@ class Newbox extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double screenWidth = MediaQuery.of(context).size.width;
+    double screenHeight = MediaQuery.of(context).size.height;
     return Container(
-      height: 270,
-      width: 250,
+      // height: 270,
+      // width: 250,
+            width: screenWidth/5.4,
+            height: screenHeight/2.4,
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(15),
           color: Colors.white,
@@ -156,26 +159,15 @@ class Newbox extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           Container(
-            height: 80,
-            width: 80,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(40),
-              color: Color.fromARGB(255, 252, 145, 63),
+              color: Colors.white,
             ),
             child: Padding(
-              padding: const EdgeInsets.all(3),
-              child: Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(40),
-                  color: Colors.white,
-                ),
-                child: Padding(
-                  padding: const EdgeInsets.all(2),
-                  child: CircleAvatar(
-                    radius: 35,
-                    backgroundImage: AssetImage('assets/person1.jpg'),
-                  ),
-                ),
+              padding: const EdgeInsets.all(2),
+              child: CircleAvatar(
+                radius: MediaQuery.of(context).size.width * 0.03,
+                backgroundImage: AssetImage('assets/person1.jpg'),
               ),
             ),
           ),
@@ -217,8 +209,10 @@ class Newbox extends StatelessWidget {
             ],
           ),
           Container(
-            height: 30,
-            width: 100,
+            // height: 30,
+            // width: 100,
+            width: screenWidth/13.66,
+            height: screenHeight/20,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(5),
               color: Color.fromARGB(255, 0, 0, 0),

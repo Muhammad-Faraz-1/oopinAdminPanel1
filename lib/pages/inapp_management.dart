@@ -22,8 +22,8 @@ class InAppManagement extends StatelessWidget {
     // ignore: non_constant_identifier_names
     final Provider11 = Provider.of<Provider1>(context);
     return Container(
-      height: double.infinity,
-      width: 1400,
+      height: screenHeight,
+      width: screenWidth,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(15),
         color: const Color.fromARGB(255, 247, 247, 249),
@@ -35,7 +35,7 @@ class InAppManagement extends StatelessWidget {
           children: [
             const TopBar(),
             const SizedBox(
-              height: 20,
+              height: 15,
             ),
             Row(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -163,8 +163,10 @@ class InAppManagement extends StatelessWidget {
                 Column(
                   children: [
                     Container(
-                      height: 520,
-                      width: 1050,
+                      // height: 520,
+                      // width: 1050,
+                      height: screenHeight/1.3,
+                      width: screenWidth/1.4,
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(5),
                           color: Colors.white,

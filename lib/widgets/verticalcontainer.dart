@@ -5,18 +5,20 @@ class verticalContainer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double screenWidth = MediaQuery.of(context).size.width;
+    double screenHeight = MediaQuery.of(context).size.height;
     return Container(
-      height: 150,
+      height: screenHeight/4.3,
           
           child: Row(
             children: [
               Container(
-                height: 150,
-                width: 160,
+               height: screenHeight/4.3,
+                width: screenWidth/8.5,
                 child: Image.asset('assets/person1.jpg',fit: BoxFit.cover,)),
               Container(
-                height: 150,
-                width: 160,
+               height: screenHeight/4.3,
+                width: screenWidth/8.5,
                 child: Image.asset('assets/person2.jpg',fit: BoxFit.cover,)),
             ],
           ),

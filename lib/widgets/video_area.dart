@@ -8,9 +8,13 @@ class VideoArea extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double screenWidth = MediaQuery.of(context).size.width;
+    double screenHeight = MediaQuery.of(context).size.height;
     return Container(
-      height: 240,
-      width: 320,
+      // height: 240,
+      // width: 320,
+      height: screenHeight/2.7,
+      width: screenWidth/4.2,
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(15),
           color: Color.fromARGB(255, 255, 255, 255)),
@@ -20,38 +24,7 @@ class VideoArea extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
            verticalContainer(),
-            // Stack(
-            //   children: [
-            //     Container(
-            //       height: 150,
-            //       width: 350,
-            //       decoration: BoxDecoration(
-            //         borderRadius: BorderRadius.circular(15),
-            //         color: Colors.black,
-            //       ),
-            //       child:  DiagonalContainer(),
-            //     ),
-            //     Positioned(
-            //       bottom: 10,
-            //       right: 10,
-            //       child: Container(
-            //         height: 20,
-            //         width:40,
-            //         decoration: BoxDecoration(
-            //           borderRadius: BorderRadius.circular(25),
-            //           color: Colors.black45,
-            //         ),
-            //         child: Padding(
-            //           padding: const EdgeInsets.symmetric(horizontal: 5,vertical:3 ),
-            //           child: Multi(color: const Color.fromARGB(255, 255, 255, 255),
-            //                               subtitle: '15:20',
-            //                               weight: FontWeight.w400,
-            //                               size: 3),
-            //         ),
-            //       ),
-            //     )
-            //   ],
-            // ),
+            
             const SizedBox(
               height: 5,
             ),
@@ -62,8 +35,8 @@ class VideoArea extends StatelessWidget {
                 Row(
                   children: [
                     Container(
-                          height: 35,
-                          width: 35,
+                          height: screenHeight/18.6,
+                          width: screenWidth/39,
                           child: const CircleAvatar(
                             radius: 25,
                             backgroundImage: AssetImage('assets/lahore.jpg'),
@@ -102,9 +75,9 @@ class VideoArea extends StatelessWidget {
                       value: 0,
                       child: Row(children: [
                         Container(
-                          height: 20,
-                          width: 20,
-                          child: Image.asset('assets/queue.png')),SizedBox(width: 10,),
+                          height: screenHeight/22.5,
+                          width: screenWidth/66.8,
+                          child: Image.asset('assets/queue.png')),SizedBox(width: screenWidth/36.6,),
                         Multi(color: const Color.fromARGB(255, 0, 0, 0), subtitle: 'Add to Queue', weight: FontWeight.w500, size: 4),
                       ],),
                   ),
@@ -113,9 +86,9 @@ class VideoArea extends StatelessWidget {
                       value: 1,
                       child: Row(children: [
                         Container(
-                          height: 20,
-                          width: 20,
-                          child: Image.asset('assets/download.png')),SizedBox(width: 10,),
+                          height: screenHeight/22.5,
+                          width: screenWidth/66.8,
+                          child: Image.asset('assets/download.png')),SizedBox(width:  screenWidth/36.6,),
                         Multi(color: const Color.fromARGB(255, 0, 0, 0), subtitle: 'Download', weight: FontWeight.w500, size: 4),
                       ],),
                   ),
@@ -124,9 +97,9 @@ class VideoArea extends StatelessWidget {
                       value: 2,
                       child: Row(children: [
                         Container(
-                          height: 20,
-                          width: 20,
-                          child: Image.asset('assets/share.png')),SizedBox(width: 10,),
+                          height: screenHeight/22.5,
+                          width: screenWidth/66.8,
+                          child: Image.asset('assets/share.png')),SizedBox(width:  screenWidth/36.6,),
                         Multi(color: const Color.fromARGB(255, 0, 0, 0), subtitle: 'Share', weight: FontWeight.w500, size: 4),
                       ],),
                   ),

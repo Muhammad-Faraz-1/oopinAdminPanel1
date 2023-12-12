@@ -6,9 +6,13 @@ class AddTime extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double screenWidth = MediaQuery.of(context).size.width;
+    double screenHeight = MediaQuery.of(context).size.height;
     return Container(
-      height: 350,
-      width: 700,
+      // height: 350,
+      // width: 700,
+      width: screenWidth/1.9,
+      height: screenHeight/1.8,
        decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(15),
               color: Colors.white,
@@ -41,8 +45,10 @@ class AddTime extends StatelessWidget {
                                     
                                   },
                                   child: Container(
-                                    height:40,
-                                    width: 110,
+                                    // height:40,
+                                    // width: 110,
+                                    height: screenHeight/16,
+                                    width: screenWidth/12.4,
                                     decoration: BoxDecoration(
                                       color: const Color.fromARGB(255, 3, 71, 80),
                                        borderRadius: BorderRadius.circular(5),
@@ -59,7 +65,7 @@ class AddTime extends StatelessWidget {
               ],
             ),
             SizedBox(
-              height: 350,
+              height: screenHeight/1.8,
               child: VerticalDivider(
                 width: 3,
               ),
@@ -79,8 +85,8 @@ class AddTime extends StatelessWidget {
                                     
                                   },
                                   child: Container(
-                                    height:40,
-                                    width: 130,
+                                    height: screenHeight/16,
+                                    width: screenWidth/10.5,
                                     decoration: BoxDecoration(
                                       color: const Color.fromARGB(255, 3, 71, 80),
                                        borderRadius: BorderRadius.circular(5),
@@ -97,7 +103,7 @@ class AddTime extends StatelessWidget {
               ],
             ),
             SizedBox(
-              height: 350,
+              height: screenHeight/1.8,
               child: VerticalDivider(
                 width: 3,
               ),
@@ -148,7 +154,7 @@ class AddTime extends StatelessWidget {
                 ),
             
                     Container(
-                      width:400,
+                      width:screenWidth/3.4,
                       color: Colors.white,
                       child: Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 80),
@@ -157,8 +163,8 @@ class AddTime extends StatelessWidget {
                                         
                                       },
                                       child: Container(
-                                        height:40,
-                                        width: 180,
+                                        height: screenHeight/16,
+                                        width: screenWidth/7.5,
                                         decoration: BoxDecoration(
                                           color: const Color.fromARGB(255, 3, 71, 80),
                                            borderRadius: BorderRadius.circular(5),

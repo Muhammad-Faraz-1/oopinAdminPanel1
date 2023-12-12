@@ -1,14 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:opin_app/widgets/add_service.dart';
-import 'package:opin_app/widgets/cappbar.dart';
-import 'package:opin_app/widgets/multi.dart';
 import 'package:opin_app/widgets/new_request_box2.dart';
-import 'package:opin_app/widgets/service_box.dart';
 import 'package:opin_app/widgets/top_bar.dart';
 
 class Request extends StatelessWidget {
   
-   Request({super.key,});
+   const Request({super.key,});
 
   @override
   Widget build(BuildContext context) {
@@ -27,11 +23,11 @@ class Request extends StatelessWidget {
               height: 10,
             ),
             Container(
-              height: screenHeight-150,
-              width: screenWidth-100,
-              child: SingleChildScrollView(
+              height: screenHeight/1.3,
+              width: screenWidth/1.08,
+              child: const SingleChildScrollView(
                 child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 10,vertical: 10),
+                  padding: EdgeInsets.symmetric(horizontal: 10,vertical: 10),
                   child: Column(
                     children: [
                       Row(

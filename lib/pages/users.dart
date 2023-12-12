@@ -36,9 +36,10 @@ class UsersPage extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Container(
-                      height: 50,
-                      width: 150,
-                      
+                      // height: 50,
+                      // width: 150,
+                      height: screenHeight/13,
+                      width: screenWidth/9,
                       child: Padding(
                         padding: const EdgeInsets.symmetric(vertical: 10),
                         child: Row(
@@ -49,8 +50,10 @@ class UsersPage extends StatelessWidget {
                                 Provider11.userpage('oopins');
                               },
                               child: Container(
-                                height: 50,
-                                width: 75,
+                                // height: 50,
+                                // width: 75,
+                                height: screenHeight/13,
+                                width: screenWidth/18.5,
                                 decoration: BoxDecoration(
                                   color: Provider11.page=='oopins'?const Color.fromARGB(255, 3, 71, 80):Colors.white,
                                   borderRadius: BorderRadius.circular(5),
@@ -69,8 +72,10 @@ class UsersPage extends StatelessWidget {
                                 Provider11.userpage('users');
                               },
                               child: Container(
-                                height: 50,
-                                width: 75,
+                                // height: 50,
+                                // width: 75,
+                                height: screenHeight/13,
+                                width: screenWidth/18.5,
                                 decoration: BoxDecoration(
                                   color: Provider11.page=='users'?const Color.fromARGB(255, 3, 71, 80):Colors.white,
                                    borderRadius: BorderRadius.circular(5),
@@ -89,8 +94,10 @@ class UsersPage extends StatelessWidget {
                       ),
                     ),
                     Container(
-                      height: 35,
-                      width: 280,
+                      // height: 35,
+                      // width: 280,
+                      height: screenHeight/18.5,
+                      width: screenWidth/5,
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(5),
                           color: Colors.white,
@@ -102,31 +109,58 @@ class UsersPage extends StatelessWidget {
                                 offset: Offset(2, 2))
                           ]),
                       child: Row(
-                        //mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
-                          SizedBox(
-                            width: 5,
+                children: [
+                  Multi(
+                      color: Colors.black,
+                      subtitle: 'Search:',
+                      weight: FontWeight.w500,
+                      size: 4),
+                  const SizedBox(
+                    width: 10,
+                  ),
+                  Container(
+                            height: 30,
+                            width: 200,
+                            child: TextFormField(
+                              // controller: name_service,
+                              cursorColor: Colors.black,
+                              style: const TextStyle(
+                                  color: Colors.black, fontSize: 15),
+                              decoration: const InputDecoration(
+                                // contentPadding: EdgeInsets.symmetric(
+                                //      horizontal: 5),
+                                hintStyle: TextStyle(
+                                    color: Color.fromARGB(255, 0, 0, 0),
+                                    fontWeight: FontWeight.w300),
+                                focusedBorder: UnderlineInputBorder(
+                                    borderSide: BorderSide(
+                                        width: 3,
+                                        color: Color.fromARGB(
+                                            255, 255, 255, 255))),
+                                enabledBorder: UnderlineInputBorder(
+                                    borderSide: BorderSide(
+                                        width: 3,
+                                        color: Color.fromARGB(
+                                            255, 255, 255, 254))),
+                                hintText: 'Search by Email',
+                                filled: true,
+                                fillColor: Color.fromARGB(255, 255, 255, 255),
+                                border: UnderlineInputBorder(
+                                    borderRadius:
+                                        BorderRadius.all(Radius.circular(15))),
+                              ),
+                            ),
                           ),
-                          Multi(
-                              color: Colors.black,
-                              subtitle: 'Search:',
-                              weight: FontWeight.w500,
-                              size: 4),
-                          const SizedBox(
-                            width: 10,
-                          ),
-                          
-                        ],
-                      ),
+                ],
+              ),
                     )
                   ],
                 ),
                 // SizedBox(height: 10,),
                 // const UserTable2(),
                 Container(
-                  height: screenHeight-150,
-                  width: screenWidth-100,
+                  height: screenHeight/1.4,
+                  width: screenWidth/1.1,
                   child: Provider11.page=='oopins'?OopinTable():Provider11.page=='users'?UserTable2():UserTable2())
               ],
             )),

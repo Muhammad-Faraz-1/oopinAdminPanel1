@@ -29,11 +29,13 @@ class FavouriteCityTable extends StatelessWidget {
                       weight: FontWeight.w500,
                       size: 4),
                   const SizedBox(
-                    width: 10,
+                    width: 5,
                   ),
                   Container(
-                            height: 30,
-                            width: 200,
+                            // height: 30,
+                            // width: 200,
+                            height: screenHeight/21.5,
+                            width: screenWidth/7,
                             child: TextFormField(
                               // controller: name_service,
                               cursorColor: Colors.black,
@@ -70,6 +72,10 @@ class FavouriteCityTable extends StatelessWidget {
           ),
         ),
         Container(
+          // height: 460,
+          // width: 1000,
+          height: screenHeight/1.5,
+          width: screenWidth/1.2,
           child: const Padding(
             padding: EdgeInsets.symmetric(
               horizontal: 10,
