@@ -8,11 +8,13 @@ class OopinCompleteInfo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double screenWidth = MediaQuery.of(context).size.width;
+    double screenHeight = MediaQuery.of(context).size.height;
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 20,vertical: 10),
       child: Container(
-        height: 400,
-        width: 550,
+        height: screenHeight/1.62,
+        width: screenWidth/2.48,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
@@ -26,8 +28,8 @@ class OopinCompleteInfo extends StatelessWidget {
               Column(
                 children: [
                   Container(
-                    height:300,
-                    width: 700,
+                    height: screenHeight/2.17,
+                    width: screenWidth/1.95,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(5),
                       color: const Color.fromARGB(255, 252, 145, 63),

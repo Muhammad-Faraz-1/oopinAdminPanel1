@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:opin_app/widgets/multi.dart';
+import 'package:opin_app/widgets/popup.dart';
 
 class Sliders extends StatelessWidget {
   @override
@@ -42,16 +43,19 @@ class _GridViewBuilderExampleState extends State<GridViewBuilderExample> {
             },
           ),
         ),
-        GestureDetector(
-          onTap: () {
-            _showTextInputDialog();
-          },
-          child: Container(
-            padding: EdgeInsets.all(16.0),
-            color: Colors.white,
-            child: Icon(
-              Icons.add,
-              color: const Color.fromARGB(255, 0, 0, 0),
+        Align(
+          alignment: Alignment.bottomCenter,
+          child: GestureDetector(
+            onTap: () {
+              _showTextInputDialog();
+            },
+            child: Container(
+              padding: EdgeInsets.all(16.0),
+              color: Colors.white,
+              child: Icon(
+                Icons.add,
+                color: const Color.fromARGB(255, 0, 0, 0),
+              ),
             ),
           ),
         ),
@@ -65,18 +69,28 @@ class _GridViewBuilderExampleState extends State<GridViewBuilderExample> {
     showDialog(
       context: context,
       builder: (BuildContext context) {
+        // return PopUp();
         return AlertDialog(
-          title: Text('Image Address'),
+           backgroundColor: Color.fromARGB(255, 3, 71, 80),
+          title: Multi(
+                                  color: Color.fromARGB(255, 255, 255, 255),
+                                  subtitle: 'Image Address',
+                                  weight: FontWeight.w600,
+                                  size: 7),
           content: TextField(
             controller: img_link,
-            decoration: InputDecoration(hintText: 'Address...'),
+            decoration: InputDecoration(hintText: 'Address...',hintStyle: TextStyle(color:Colors.white)),
           ),
           actions: <Widget>[
             ElevatedButton(
               onPressed: () {
                 Navigator.of(context).pop();
               },
-              child: Text('Cancel'),
+              child: Multi(
+                                  color: Color.fromARGB(255, 3, 71, 80),
+                                  subtitle: 'Cancel',
+                                  weight: FontWeight.w600,
+                                  size: 4),
             ),
             ElevatedButton(
               onPressed: () {
@@ -86,7 +100,11 @@ class _GridViewBuilderExampleState extends State<GridViewBuilderExample> {
                 });
                 Navigator.of(context).pop();
               },
-              child: Text('Add'),
+              child: Multi(
+                                  color: Color.fromARGB(255, 3, 71, 80),
+                                  subtitle: 'Add',
+                                  weight: FontWeight.w600,
+                                  size: 4),
             ),
           ],
         );
@@ -95,70 +113,80 @@ class _GridViewBuilderExampleState extends State<GridViewBuilderExample> {
   }
 
   static Widget buildContainer(int index, [String img_link = ""]) {
-    return Container(
-      // height: 200,
-      // width: 300,
-      decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(5),
-          color: Colors.white,
-          boxShadow: [
-            BoxShadow(
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        return Container(
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(5),
+            color: Colors.white,
+            boxShadow: [
+              BoxShadow(
                 blurRadius: 5,
                 color: Colors.black.withOpacity(0.2),
                 spreadRadius: 2,
-                offset: Offset(2, 2))
-          ]),
-      child: Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            Container(
-                height: 180,
-                width: 280,
-                child: Image.network(
-                  img_link,
-                  fit: BoxFit.fill,
-                )),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                offset: Offset(2, 2),
+              )
+            ],
+          ),
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Container(
-                  height: 30,
-                  width: 70,
-                  decoration: BoxDecoration(
-                    color: const Color.fromARGB(255, 3, 71, 80),
-                    borderRadius: BorderRadius.circular(5),
-                  ),
-                  child: Center(
-                    child: Multi(
-                        color: Colors.white,
-                        subtitle: 'Edit',
-                        weight: FontWeight.w500,
-                        size: 4),
+                  height: constraints.maxHeight * 0.7, // Adjust the height as needed
+                  width: constraints.maxWidth * 0.9, // Adjust the width as needed
+                  child: Image.network(
+                    img_link,
+                    fit: BoxFit.fill,
                   ),
                 ),
-                Container(
-                  height: 30,
-                  width: 70,
-                  decoration: BoxDecoration(
-                    color: const Color.fromARGB(255, 3, 71, 80),
-                    borderRadius: BorderRadius.circular(5),
-                  ),
-                  child: Center(
-                    child: Multi(
-                        color: Colors.white,
-                        subtitle: 'Delete',
-                        weight: FontWeight.w500,
-                        size: 4),
-                  ),
-                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Container(
+                      height: constraints.maxHeight * 0.1, // Adjust the height as needed
+                      width: constraints.maxWidth * 0.3, // Adjust the width as needed
+                      decoration: BoxDecoration(
+                        color: const Color.fromARGB(255, 3, 71, 80),
+                        borderRadius: BorderRadius.circular(5),
+                      ),
+                      child: Center(
+                        child: Text(
+                          'Edit',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.w500,
+                            fontSize: 4,
+                          ),
+                        ),
+                      ),
+                    ),
+                    Container(
+                      height: constraints.maxHeight * 0.1, // Adjust the height as needed
+                      width: constraints.maxWidth * 0.3, // Adjust the width as needed
+                      decoration: BoxDecoration(
+                        color: const Color.fromARGB(255, 3, 71, 80),
+                        borderRadius: BorderRadius.circular(5),
+                      ),
+                      child: Center(
+                        child: Text(
+                          'Delete',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.w500,
+                            fontSize: 4,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
+                )
               ],
-            )
-          ],
-        ),
-      ),
+            ),
+          ),
+        );
+      },
     );
   }
 }
-

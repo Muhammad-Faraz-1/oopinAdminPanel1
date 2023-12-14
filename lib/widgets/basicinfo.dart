@@ -6,6 +6,8 @@ class BasicInfoOopin extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double screenWidth = MediaQuery.of(context).size.width;
+    double screenHeight = MediaQuery.of(context).size.height;
     return Container(
       decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(15),
@@ -43,8 +45,8 @@ class BasicInfoOopin extends StatelessWidget {
             child: Row(
               children: [
                 Container(
-                  height: 200,
-                  width: 200,
+                  height: screenHeight/3.25,
+                  width: screenWidth/6.93,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(05),
                     color: Colors.transparent,
@@ -59,8 +61,8 @@ class BasicInfoOopin extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Container(
-                    height: 200,
-                    width: 400,
+                    height: screenHeight/3.25,
+                    width: screenWidth/3.49,
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -116,8 +118,8 @@ class BasicInfoOopin extends StatelessWidget {
                         Row(
                           children: [
                             Container(
-                                height: 15,
-                                width: 15,
+                                height: screenHeight/43.4,
+                                width: screenWidth/91,
                                 child: Image.asset(
                                   'assets/email.png',
                                   color: const Color.fromARGB(255, 0, 0, 0),
@@ -143,8 +145,8 @@ class BasicInfoOopin extends StatelessWidget {
                         Row(
                           children: [
                             Container(
-                                height: 15,
-                                width: 15,
+                                height: screenHeight/43.4,
+                                width: screenWidth/91,
                                 child: Image.asset(
                                   'assets/location.png',
                                   color: const Color.fromARGB(255, 0, 0, 0),
@@ -170,8 +172,8 @@ class BasicInfoOopin extends StatelessWidget {
                         Row(
                           children: [
                             Container(
-                                height: 15,
-                                width: 15,
+                                height: screenHeight/43.4,
+                                width: screenWidth/91,
                                 child: Image.asset(
                                   'assets/phone.png',
                                   color: const Color.fromARGB(255, 0, 0, 0),
@@ -197,8 +199,8 @@ class BasicInfoOopin extends StatelessWidget {
                         Row(
                           children: [
                             Container(
-                                height: 15,
-                                width: 15,
+                                height: screenHeight/43.4,
+                                width: screenWidth/91,
                                 child: Image.asset(
                                   'assets/user.png',
                                   color: Colors.black,
@@ -224,8 +226,8 @@ class BasicInfoOopin extends StatelessWidget {
                         Row(
                           children: [
                             Container(
-                                height: 15,
-                                width: 15,
+                                height: screenHeight/43.4,
+                                width: screenWidth/91,
                                 child: Image.asset(
                                   'assets/city.png',
                                   color: Colors.black,
@@ -253,16 +255,16 @@ class BasicInfoOopin extends StatelessWidget {
                   ),
                 ),
                 Container(
-                  height: 220,
-                  width: 600,
+                  height: screenHeight/2.95,
+                  width: screenWidth/2.6,
                   child: Column(
                     children: [
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Container(
-                            height: 200,
-                            width: 280,
+                            height: screenHeight/3.2,
+                            width: screenWidth/5.1,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(05),
                               color: Colors.transparent,
@@ -275,8 +277,8 @@ class BasicInfoOopin extends StatelessWidget {
                                 )),
                           ),
                           Container(
-                            height: 200,
-                            width: 280,
+                            height: screenHeight/3.2,
+                            width: screenWidth/5.5,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(05),
                               color: Colors.transparent,

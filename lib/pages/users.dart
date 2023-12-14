@@ -119,8 +119,8 @@ class UsersPage extends StatelessWidget {
                     width: 10,
                   ),
                   Container(
-                            height: 30,
-                            width: 200,
+                            height: screenHeight/21.7,
+                            width: screenWidth/6.86,
                             child: TextFormField(
                               // controller: name_service,
                               cursorColor: Colors.black,

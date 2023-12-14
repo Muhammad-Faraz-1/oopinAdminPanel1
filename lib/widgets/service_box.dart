@@ -95,12 +95,14 @@ class NewServiceBox extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double screenWidth = MediaQuery.of(context).size.width;
+    double screenHeight = MediaQuery.of(context).size.height;
     final Provider11 = Provider.of<Provider1>(context);
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: Container(
-        height: 180,
-        width: 600,
+        height: screenHeight/3.61,
+        width: screenWidth/2.4,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(8),
           color: Colors.white,
@@ -135,7 +137,7 @@ class NewServiceBox extends StatelessWidget {
                           subtitle:
                               'The foodservice (US English) or catering (British English) industry includes the businesses, institutions, and companies which prepare meals outside the home. It includes restaurants, grocery stores, school and hospital cafeterias, catering operations, and many other formats.includes the businesses, institutions, and companies which prepare meals outside the home. It includes restaurants, grocery stores, school ',
                           weight: FontWeight.w500,
-                          size: 3),
+                          size: 4),
                     ),
                     SizedBox(height: 10,),
                     
@@ -162,8 +164,8 @@ class NewServiceBox extends StatelessWidget {
                           child: Padding(
                             padding: const EdgeInsets.all(5),
                             child: Container(
-                              height: 110,
-                              width: 150,
+                              height: screenHeight/6,
+                              width: screenWidth/9.4,
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(05),
                                 color: Colors.transparent,
@@ -196,8 +198,8 @@ class NewServiceBox extends StatelessWidget {
                     height: 2,
                   ),
                   Container(
-                height: 30,
-                width: 100,
+                height: screenHeight/21.7,
+                width: screenWidth/13.66,
                 child: GestureDetector(
                   onTap: () {
                     showDialog(
@@ -205,8 +207,8 @@ class NewServiceBox extends StatelessWidget {
                     Provider11.serviceName(servicename!, serviceimage!);
                   },
                   child: Container(
-                    height: 30,
-                    width: 100,
+                    height: screenHeight/21.7,
+                    width: screenWidth/13.66,
                     decoration: const BoxDecoration(
                       // borderRadius: BorderRadius.circular(15),
                       color: Color.fromARGB(255, 255, 255, 255),

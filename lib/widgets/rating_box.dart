@@ -16,7 +16,7 @@ class RatingBox extends StatelessWidget {
           // height:screenHeight>1400?190:screenHeight>1000?170:150,
           // width: screenWidth>1400?200:screenWidth>1250?190:screenWidth>1100?170:150,
           width: screenWidth/6.5,
-          height: screenHeight/4.5,
+          height: screenHeight/4.6,
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(15),
               color: Colors.white,

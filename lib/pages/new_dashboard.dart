@@ -95,6 +95,7 @@ class NewDashboard extends StatelessWidget {
                       children: [
                         TopOopinTable(),
                         GraphBox(),
+                        
                       ],
                     )
               ],

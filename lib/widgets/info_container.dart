@@ -17,7 +17,7 @@ class InfoContainer extends StatelessWidget {
       // height:screenHeight>1400?190:screenHeight>1000?170:150,
           // width: screenWidth>1400?200:screenWidth>1250?190:screenWidth>1100?160:150,
           width: screenWidth/6.5,
-          height: screenHeight/4.5,
+          height: screenHeight/4.6,
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(15),
           color: Colors.white,
@@ -41,8 +41,8 @@ class InfoContainer extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Container(
-                      height: 20,
-                      width: 20,
+                      height: screenHeight/43.4,
+                      width: screenWidth/68.3,
                       child: Image.asset('assets/activeuser.png'),
                     ),
                     SizedBox(
@@ -92,8 +92,8 @@ class InfoContainer extends StatelessWidget {
                 Row(
                   children: [
                     Container(
-                      height: 15,
-                      width: 15,
+                      height: screenHeight/43.4,
+                      width: screenWidth/91,
                       child: Image.asset('assets/increase.png',
                           color: Colors.green),
                     ),
@@ -128,7 +128,7 @@ class InfoContainer extends StatelessWidget {
             ),
             Divider(thickness: 1.5, color: Color.fromARGB(215, 215, 215, 215)),
             Container(
-              height: 20,
+              height: screenHeight/32.55,
               child: Row(
                 children: [
                   Multi(

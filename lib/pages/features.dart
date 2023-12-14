@@ -16,17 +16,14 @@ class Features extends StatelessWidget {
     double screenHeight = MediaQuery.of(context).size.height;
     final Provider11 = Provider.of<Provider1>(context);
     return Container(
-      
       decoration: BoxDecoration(
-      color: const Color.fromARGB(255, 247, 247, 249),
-      borderRadius: BorderRadius.circular(15)
-      ),
+          color: const Color.fromARGB(255, 247, 247, 249),
+          borderRadius: BorderRadius.circular(15)),
       child: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
-            
             children: [
               const TopBar(),
               const SizedBox(
@@ -34,15 +31,15 @@ class Features extends StatelessWidget {
               ),
               Container(
                   child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       Container(
-                        height: 50,
-                        width: 150,
+                        height: screenHeight / 13.02,
+                        width: screenWidth / 9.1,
                         child: Padding(
                           padding: const EdgeInsets.symmetric(vertical: 10),
                           child: Row(
@@ -53,8 +50,8 @@ class Features extends StatelessWidget {
                                   Provider11.userpage2('cities');
                                 },
                                 child: Container(
-                                  height: 50,
-                                  width: 75,
+                                  height: screenHeight / 13.02,
+                                  width: screenWidth / 18.21,
                                   decoration: BoxDecoration(
                                     color: Provider11.page2 == 'cities'
                                         ? const Color.fromARGB(255, 3, 71, 80)
@@ -77,8 +74,8 @@ class Features extends StatelessWidget {
                                   Provider11.userpage2('services');
                                 },
                                 child: Container(
-                                  height: 50,
-                                  width: 75,
+                                  height: screenHeight / 13.02,
+                                  width: screenWidth / 18.21,
                                   decoration: BoxDecoration(
                                     color: Provider11.page2 == 'services'
                                         ? const Color.fromARGB(255, 3, 71, 80)
@@ -101,8 +98,8 @@ class Features extends StatelessWidget {
                         ),
                       ),
                       Container(
-                        height: 35,
-                        width: 280,
+                        height: screenHeight / 18.6,
+                        width: screenWidth / 4.87,
                         decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(5),
                             color: Colors.white,
@@ -129,8 +126,8 @@ class Features extends StatelessWidget {
                               width: 10,
                             ),
                             Container(
-                              height: 30,
-                              width: 200,
+                              height: screenHeight / 21.7,
+                              width: screenWidth / 6.86,
                               child: TextFormField(
                                 // controller: name_service,
                                 cursorColor: Colors.black,
@@ -168,69 +165,71 @@ class Features extends StatelessWidget {
                   ),
                   // SizedBox(height: 10,),
                   // const UserTable2(),
-                  Provider11.page2=='cities'? Column(
-                    children: [
-                      Container(
-                      height: 35,
-                      width: 120,
-                      
-                      child: Padding(
-                        padding: const EdgeInsets.all(1.5),
-                        child: Container(
-                          decoration:  BoxDecoration(
-                            
-                        borderRadius: BorderRadius.circular(5) ,
-                            color: Color.fromARGB(255, 3, 71, 80),
-                          ),
-                          child: TextButton(
-                            onPressed: () {
-                              showDialog(
-                                  context: context,
-                                  builder: ((context) => const AddCity()));
-                            },
-                            child: Multi(
-                                color: const Color.fromARGB(255, 255, 255, 255),
-                                subtitle: 'Add City',
-                                weight: FontWeight.w600,
-                                size: 4),
-                          ),
+                  Provider11.page2 == 'cities'
+                      ? Column(
+                          children: [
+                            Container(
+                              height: screenHeight / 18.6,
+                              width: screenWidth / 11.38,
+                              child: Padding(
+                                padding: const EdgeInsets.all(1.5),
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(5),
+                                    color: Color.fromARGB(255, 3, 71, 80),
+                                  ),
+                                  child: TextButton(
+                                    onPressed: () {
+                                      showDialog(
+                                          context: context,
+                                          builder: ((context) =>
+                                              const AddCity()));
+                                    },
+                                    child: Multi(
+                                        color: const Color.fromARGB(
+                                            255, 255, 255, 255),
+                                        subtitle: 'Add City',
+                                        weight: FontWeight.w600,
+                                        size: 4),
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ],
+                        )
+                      : Column(
+                          children: [
+                            Container(
+                              height: screenHeight / 18.6,
+                              width: screenWidth / 9.75,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(5),
+                                color: Color.fromARGB(255, 3, 71, 80),
+                              ),
+                              child: TextButton(
+                                onPressed: () {
+                                  showDialog(
+                                      context: context,
+                                      builder: ((context) => AddService()));
+                                },
+                                child: Multi(
+                                    color: Color.fromARGB(255, 255, 255, 255),
+                                    subtitle: 'Add Service',
+                                    weight: FontWeight.w600,
+                                    size: 4),
+                              ),
+                            ),
+                            SizedBox(
+                              height: 10,
+                            )
+                          ],
                         ),
-                      ),
-                                      ),
-                                      
-                    ],
-                  )
-                 :Column(
-                   children: [
-                     Container(
-                      height: 35,
-                      width: 140,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(5),
-                         color: Color.fromARGB(255, 3, 71, 80),
-                      ),
-                      child: TextButton(
-                        onPressed: () {
-                          showDialog(
-                              context: context,
-                              builder: ((context) => AddService()));
-                        },
-                        child: Multi(
-                            color: Color.fromARGB(255, 255, 255, 255),
-                            subtitle: 'Add Service',
-                            weight: FontWeight.w600,
-                            size: 4),
-                      ),
-                                     ),
-                SizedBox(height: 10,)
-                   ],
-                 ),
                   Container(
-                    height: screenHeight-150,
-                  width: screenWidth-100,
+                    height: screenHeight / 1.4,
+                    width: screenWidth / 1.1,
                     child: Provider11.page2 == 'cities'
                         ? const CityTable()
-                            : const ServiceTable(),
+                        : const ServiceTable(),
                   )
                 ],
               )),
@@ -241,6 +240,3 @@ class Features extends StatelessWidget {
     );
   }
 }
-
-
-

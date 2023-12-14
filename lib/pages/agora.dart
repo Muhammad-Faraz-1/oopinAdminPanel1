@@ -10,6 +10,8 @@ class Agora extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double screenWidth = MediaQuery.of(context).size.width;
+    double screenHeight = MediaQuery.of(context).size.height;
     final Provider11 = Provider.of<Provider1>(context);
     return Container(
       child: Padding(
@@ -29,8 +31,8 @@ class Agora extends StatelessWidget {
                         Provider11.video(1);
                       },
                       child: Container(
-                        height: 40,
-                        width: 120,
+                        height: screenHeight/16.2,
+                        width: screenWidth/11.38,
                         decoration: BoxDecoration(
                            boxShadow: [
                             BoxShadow(
@@ -61,8 +63,8 @@ class Agora extends StatelessWidget {
                         Provider11.video(2);
                       },
                       child: Container(
-                        height: 40,
-                        width: 90,
+                        height: screenHeight/16.2,
+                        width: screenWidth/15.17,
                         decoration: BoxDecoration(
                            boxShadow: [
                             BoxShadow(
@@ -93,8 +95,8 @@ class Agora extends StatelessWidget {
                         Provider11.video(3);
                       },
                       child: Container(
-                        height: 40,
-                        width: 150,
+                        height: screenHeight/16.2,
+                        width: screenWidth/9.1,
                         decoration: BoxDecoration(
                            boxShadow: [
                             BoxShadow(
@@ -121,8 +123,8 @@ class Agora extends StatelessWidget {
                     ),
                     SizedBox(width: 10,),
                     Container(
-                      width: 260,
-                      height: 40,
+                      width: screenWidth/5.25,
+                      height: screenHeight/16.2,
                       decoration: BoxDecoration(
                           // borderRadius: BorderRadius.circular(15),
                           color: Colors.white,
@@ -196,8 +198,8 @@ class Agora extends StatelessWidget {
             ),
             SizedBox(height: 10,),
             Container(
-                  height: 360,
-                  width: 1250,
+                  height: screenHeight/1.9,
+                  width: screenWidth/1.09,
                   decoration: BoxDecoration(
                           // borderRadius: BorderRadius.circular(15),
                           color: Colors.white,
@@ -214,8 +216,8 @@ class Agora extends StatelessWidget {
                               child: Column(
                                 children: [
                                   Container(
-                                    height: 240,
-                                    width: 1230,
+                                    height: screenHeight/2.9,
+                                    width: screenWidth/1.11,
                                     decoration: BoxDecoration(
                                       color: Colors.yellow,
                                       borderRadius: BorderRadius.circular(15)
@@ -223,7 +225,7 @@ class Agora extends StatelessWidget {
                                   ),
                                     
                                   DataTable(
-                                    columnSpacing: 120.0,
+                                    columnSpacing: screenWidth/13,
                                   
                                     columns: [
                                     DataColumn(label: Multi(color: Colors.black, subtitle: 'Date', weight: FontWeight.w500, size: 4)),

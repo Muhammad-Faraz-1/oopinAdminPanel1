@@ -12,7 +12,7 @@ class TopOopinTable extends StatelessWidget {
     return Container(
       // height:screenHeight>1400?700:screenHeight>800?500:400,
       //     width: screenWidth>1400?600:screenWidth>1250?190:screenWidth>1100?160:150,
-      width: screenWidth/2.2,
+      width: screenWidth/2.3,
       height: screenHeight/2.2,
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(15),

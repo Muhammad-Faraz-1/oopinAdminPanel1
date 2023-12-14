@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:opin_app/widgets/add_city.dart';
 import 'package:opin_app/widgets/add_service.dart';
+import 'package:opin_app/widgets/center_screen.dart';
 import 'package:opin_app/widgets/city_box.dart';
 import 'package:opin_app/widgets/multi.dart';
 import 'package:opin_app/widgets/service_box.dart';
@@ -10,9 +11,11 @@ class ServiceTable extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double screenWidth = MediaQuery.of(context).size.width;
+    double screenHeight = MediaQuery.of(context).size.height;
     return Container(
-      height: 500,
-      width: 1350,
+      height: screenHeight / 1.30,
+      width: screenWidth / 1.01,
       child: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -99,60 +102,56 @@ class ServiceTable extends StatelessWidget {
   }
 }
 
-
-
 class CityTable extends StatelessWidget {
   const CityTable({super.key});
 
   @override
   Widget build(BuildContext context) {
+    double screenWidth = MediaQuery.of(context).size.width;
+    double screenHeight = MediaQuery.of(context).size.height;
     return Container(
-      height: 500,
-      width: 1350,
-      child: SingleChildScrollView(
+      height: screenHeight / 1.30,
+      width: screenWidth / 1.01,
+      child: const SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.all(10),
-          child:  Column(
-            
+          padding: EdgeInsets.all(10),
+          child: Column(
+            children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                 const Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      CityBox(),
-                      CityBox(),
-                      CityBox(),
-                      CityBox(),
-                      CityBox(),
-                    ],
-                  ),
-                  SizedBox(
-                    height: 15,
-                  ),
-                 const Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      CityBox(),
-                      CityBox(),
-                      CityBox(),
-                      CityBox(),
-                      CityBox(),
-                    ],
-                  ),
-                  SizedBox(
-                    height: 15,
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      CityBox(),
-                      CityBox(),
-                      CityBox(),
-                      CityBox(),
-                      CityBox(),
-                    ],
-                  ),
+                  CityBox(),
+                  CityBox(),
+                  CityBox(),
+                  CityBox(),
                 ],
               ),
+              SizedBox(
+                height: 15,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  CityBox(),
+                  CityBox(),
+                  CityBox(),
+                  CityBox(),
+                ],
+              ),
+              SizedBox(
+                height: 15,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  CityBox(),
+                  CityBox(),
+                  CityBox(),
+                  CityBox(),
+                ],
+              ),
+            ],
+          ),
         ),
       ),
     );

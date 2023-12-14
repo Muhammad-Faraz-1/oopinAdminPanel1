@@ -13,7 +13,7 @@ class GraphBox extends StatelessWidget {
       // height:400,
       // width: 600,
       height: screenHeight/2.2,
-      width: screenWidth/2.5,
+      width: screenWidth/2.6,
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(15),
           color: Colors.white,
@@ -36,7 +36,7 @@ class GraphBox extends StatelessWidget {
                 Container(
                   // height: 50,
                   // width: 100,
-                  width: screenWidth/13,
+                  width: screenWidth/14,
                   height: screenHeight/15,
                   child: DropDown(),
                   // child: Row(

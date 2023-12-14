@@ -7,6 +7,8 @@ class CityBox extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double screenWidth = MediaQuery.of(context).size.width;
+    double screenHeight = MediaQuery.of(context).size.height;
     return Container(
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(8),
@@ -25,24 +27,27 @@ class CityBox extends StatelessWidget {
             Stack(
               children: [
                 Container(
-                  height: 150,
-                  width: 210,
+                  height: screenHeight / 4.34,
+                  width: screenWidth / 6.1,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(5),
                     color: Colors.transparent,
                   ),
                   child: ClipRRect(
-                    borderRadius: BorderRadius.circular(5),
-                    child: Image.asset('assets/blackburn.jpg',fit: BoxFit.cover,)),
+                      borderRadius: BorderRadius.circular(5),
+                      child: Image.asset(
+                        'assets/blackburn.jpg',
+                        fit: BoxFit.cover,
+                      )),
                 ),
                 Container(
-                  height: 150,
-                  width: 210,
+                  height: screenHeight / 4.34,
+                  width: screenWidth / 6.1,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(5),
                     color: const Color.fromARGB(0, 0, 0, 0).withOpacity(0.5),
                   ),
-        ),
+                ),
               ],
             ),
             const SizedBox(
@@ -56,18 +61,23 @@ class CityBox extends StatelessWidget {
                     subtitle: 'Blackburn',
                     weight: FontWeight.w500,
                     size: 4),
-                    SizedBox(width: 90,),
-                    IconButton(onPressed: () {
-                                showDialog(
-                              context: context,
-                              builder: (context) => DeleteCity());
-                              },
-                              icon: Container(
-                                height: 15,
-                                width: 15,
-                                child: Image.asset('assets/delete2.png',color: const Color.fromARGB(255, 0, 0, 0),)),
-                              iconSize: 5,
-                              ),
+                SizedBox(
+                  width: 90,
+                ),
+                IconButton(
+                  onPressed: () {
+                    showDialog(
+                        context: context, builder: (context) => DeleteCity());
+                  },
+                  icon: Container(
+                      height: screenHeight / 43.2,
+                      width: screenWidth / 91.06,
+                      child: Image.asset(
+                        'assets/delete2.png',
+                        color: const Color.fromARGB(255, 0, 0, 0),
+                      )),
+                  iconSize: 5,
+                ),
               ],
             ),
           ],
