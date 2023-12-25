@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:opin_app/statemanager/provider.dart';
-import 'package:opin_app/widgets/cappbar.dart';
 import 'package:opin_app/widgets/multi.dart';
-import 'package:opin_app/widgets/textfield.dart';
 import 'package:opin_app/widgets/top_bar.dart';
 import 'package:opin_app/widgets/user_table.dart';
 import 'package:provider/provider.dart';
@@ -120,7 +118,7 @@ class UsersPage extends StatelessWidget {
                   ),
                   Container(
                             height: screenHeight/21.7,
-                            width: screenWidth/6.86,
+                            width: screenWidth/7,
                             child: TextFormField(
                               // controller: name_service,
                               cursorColor: Colors.black,

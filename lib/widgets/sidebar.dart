@@ -19,7 +19,7 @@ class _SideBarState extends State<SideBar> {
     final Provider11 = Provider.of<Provider1>(context);
     return Container(
         height: screenHeight,
-        width: 70,
+        width: screenWidth/21,
         color: Color.fromARGB(215, 3, 71, 80),
         child: Padding(
           padding: EdgeInsets.symmetric(vertical: 15),
@@ -27,8 +27,8 @@ class _SideBarState extends State<SideBar> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Container(
-                        height: 80,
-                        width: 80,
+                        height: screenHeight/8.13,
+                        width: screenWidth/17,
                         child: Image.asset('assets/logo1.png')),
                     // SizedBox(
                     //   height: 20,
@@ -44,8 +44,8 @@ class _SideBarState extends State<SideBar> {
                         // mainAxisAlignment: MainAxisAlignment.spaceAround,
                         children: [
                           Container(
-                              height: 25,
-                              width: 25,
+                              height: screenHeight/26.04,
+                              width: screenWidth/54.6,
                               child: Image.asset('assets/dashboard.png',
                                   color: Color.fromARGB(215, 215, 215, 215))),
                           SizedBox(height: 5,),
@@ -67,8 +67,8 @@ class _SideBarState extends State<SideBar> {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Container(
-                              height: 25,
-                              width: 25,
+                              height: screenHeight/26.04,
+                              width: screenWidth/54.6,
                               child: Image.asset('assets/group.png',
                                   color: Color.fromARGB(
                                       215, 215, 215, 215))),
@@ -132,8 +132,8 @@ class _SideBarState extends State<SideBar> {
                       },
                     child: Column(children: [
                       Container(
-                          height: 25,
-                          width: 25,
+                          height: screenHeight/26.04,
+                          width: screenWidth/54.6,
                           child: Image.asset('assets/smartphone.png',
                               color: Color.fromARGB(215, 215, 215, 215))),
                       SizedBox(height: 5,),
@@ -153,8 +153,8 @@ class _SideBarState extends State<SideBar> {
                       },
                     child: Column(children: [
                       Container(
-                          height: 25,
-                          width: 25,
+                          height: screenHeight/26.04,
+                          width: screenWidth/54.6,
                           child: Image.asset('assets/camera.png',
                               color: Color.fromARGB(215, 215, 215, 215))),
                       SizedBox(height: 5,),
@@ -172,8 +172,8 @@ class _SideBarState extends State<SideBar> {
                       },
                     child: Column(children: [
                       Container(
-                          height: 25,
-                          width: 25,
+                          height: screenHeight/26.04,
+                              width: screenWidth/54.6,
                           child: Image.asset('assets/request2.png',
                               color: Color.fromARGB(215, 215, 215, 215))),
                       SizedBox(height: 5,),
@@ -191,8 +191,8 @@ class _SideBarState extends State<SideBar> {
                       },
                     child: Column(children: [
                       Container(
-                          height: 25,
-                          width: 25,
+                         height: screenHeight/26.04,
+                              width: screenWidth/54.6,
                           child: Image.asset('assets/layout.png',
                               color: Color.fromARGB(215, 215, 215, 215))),
                       SizedBox(height: 5,),
@@ -210,8 +210,8 @@ class _SideBarState extends State<SideBar> {
                       },
                     child: Column(children: [
                       Container(
-                          height: 25,
-                          width: 25,
+                          height: screenHeight/26.04,
+                              width: screenWidth/54.6,
                           child: Image.asset('assets/support.png',
                               color: Color.fromARGB(215, 215, 215, 215))),
                       SizedBox(height: 5,),
@@ -229,8 +229,8 @@ class _SideBarState extends State<SideBar> {
                       },
                     child: Column(children: [
                       Container(
-                          height: 25,
-                          width: 25,
+                          height: screenHeight/26.04,
+                              width: screenWidth/54.6,
                           child: Image.asset('assets/report.png',
                               color: Color.fromARGB(215, 215, 215, 215))),
                       SizedBox(height: 5,),
@@ -247,8 +247,8 @@ class _SideBarState extends State<SideBar> {
               Column(
                           children: [
                             Container(
-                              height: 25,
-                              width: 25,
+                              height: screenHeight/26.04,
+                              width: screenWidth/54.6,
                               child: Image.asset('assets/logout.png',color: Color.fromARGB(215, 215, 215, 215)),
                             ),
                               Multi(

@@ -9,7 +9,7 @@ class TopCityColumn extends StatelessWidget {
     double screenWidth = MediaQuery.of(context).size.width;
     double screenHeight = MediaQuery.of(context).size.height;
     return Container(
-      height: screenHeight/2.55,
+      height: screenHeight/2.8,
       // width: screenWidth/6,
           // height:screenHeight>1400?340:screenHeight>1000?340:280,
       // width: screenWidth>1400?250:screenWidth>1100?220:180,
@@ -18,9 +18,9 @@ class TopCityColumn extends StatelessWidget {
                                 padding: const EdgeInsets.symmetric(horizontal: 10),
                                 child: Column(
                                   children: [
-                                    TopCity(city: 'Manchester', img: 'assets/manchester.jpg',),SizedBox(height: 15,),
-                                    TopCity(city: 'Cardiff', img: 'assets/cardiff.jpg',),SizedBox(height: 15,),
-                                    TopCity(city: 'Blackburn', img: 'assets/blackburn.jpg',),SizedBox(height: 15,),
+                                    TopCity(city: 'Manchester', img: 'assets/manchester.jpg',),SizedBox(height: screenHeight/44,),
+                                    TopCity(city: 'Cardiff', img: 'assets/cardiff.jpg',),SizedBox(height: screenHeight/44,),
+                                    TopCity(city: 'Blackburn', img: 'assets/blackburn.jpg',),SizedBox(height: screenHeight/44,),
                                     TopCity(city: 'London', img: 'assets/London.jpg',),
                                   ],
                                 ),

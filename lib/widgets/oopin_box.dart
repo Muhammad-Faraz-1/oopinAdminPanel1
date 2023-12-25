@@ -133,8 +133,8 @@ class NewOopinBox extends StatelessWidget {
           child: Container(
           //   height: 120,
           // width: 390,
-          height: screenHeight/6.3,
-          width: screenWidth/3.5,
+          height: screenHeight/7,
+          width: screenWidth/4,
             decoration: BoxDecoration(
              color: Colors.green,
                   boxShadow: [
@@ -162,10 +162,10 @@ class NewOopinBox extends StatelessWidget {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Multi(color: Colors.black, subtitle: 'Noman Ali', weight: FontWeight.bold, size: 5),
-                            Multi(color: Colors.black, subtitle: 'nomanaliahmed@gmail.com', weight: FontWeight.w500, size: 3),
-                            Multi(color: Colors.black, subtitle: '3 November 2023', weight: FontWeight.w400, size: 3),
-                            Multi(color: Colors.black, subtitle: 'Manchester', weight: FontWeight.w400, size: 3),
+                            Multi(color: Colors.black, subtitle: 'Noman Ali', weight: FontWeight.bold, size: 4),
+                            Multi(color: Colors.black, subtitle: 'nomanaliahmed@gmail.com', weight: FontWeight.w500, size: 2.5),
+                            Multi(color: Colors.black, subtitle: '3 November 2023', weight: FontWeight.w400, size: 2.5),
+                            Multi(color: Colors.black, subtitle: 'Manchester', weight: FontWeight.w400, size: 2.5),
                           ],
                         ),
                       )

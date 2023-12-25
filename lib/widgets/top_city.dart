@@ -16,7 +16,7 @@ class TopCity extends StatelessWidget {
         Container(
           // height: 110,
           // width: screenWidth>1400?220:screenWidth>1100?220:180,
-          width: screenWidth/7,
+          width: screenWidth/6.5,
           height: screenHeight/5.5,
           decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(15),
@@ -35,7 +35,7 @@ class TopCity extends StatelessWidget {
               )),
         ),
         Container(
-          width: screenWidth/7,
+          width: screenWidth/6.5,
           height: screenHeight/5.5,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(15),
@@ -57,10 +57,10 @@ class TopCity extends StatelessWidget {
                             color: Colors.white,
                             subtitle: city,
                             weight: FontWeight.w600,
-                            size: 5),
+                            size: 4),
                             Container(
-                          height: screenHeight/15, 
-                          width: screenWidth/40,
+                          height: screenHeight/16, 
+                          width: screenWidth/41,
                           child: Image.asset('assets/4-stars.png')),
                       ],
                     ),
@@ -71,8 +71,8 @@ class TopCity extends StatelessWidget {
                 padding: const EdgeInsets.all(5),
                 child: Container(
                   // height: 55,
-                  height: screenHeight/15,
-                  width: screenWidth/8,
+                  height: screenHeight/16,
+                  width: screenWidth/9,
                   // width: 150,
                   
                   decoration: BoxDecoration(
@@ -95,7 +95,7 @@ class TopCity extends StatelessWidget {
                                 color: Colors.white,
                                 subtitle: '50',
                                 weight: FontWeight.w500,
-                                size: 4),
+                                size: 3),
                           ],
                         ),
                         Column(
@@ -109,7 +109,7 @@ class TopCity extends StatelessWidget {
                                 color: Colors.white,
                                 subtitle: '150',
                                 weight: FontWeight.w500,
-                                size: 4),
+                                size: 3),
                           ],
                         ),
                       ],

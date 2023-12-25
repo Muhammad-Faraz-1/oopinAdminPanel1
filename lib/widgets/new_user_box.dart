@@ -88,57 +88,65 @@ class NewUserBox2 extends StatelessWidget {
     double screenHeight = MediaQuery.of(context).size.height;
     return Stack(
       children: [
-        Container(
-          // height:screenHeight>1400?100:screenHeight>1000?180:150,
-          // width: screenWidth>1350?390:screenWidth>1250?190:screenWidth>1100?170:150,
-          height: screenHeight / 6.3,
-          width: screenWidth / 3.5,
-          decoration: BoxDecoration(color: Colors.green, boxShadow: [
-            BoxShadow(
-                blurRadius: 5,
-                color: Colors.black.withOpacity(0.2),
-                spreadRadius: 2,
-                offset: Offset(2, 2))
-          ]),
-          child: Padding(
-            padding: const EdgeInsets.only(left: 3),
-            child: Container(
-              color: Colors.white,
-              child: Row(
-                children: [
-                  Container(
-                      // height: 100,
-                      // width: 120,
-                      height: screenHeight/6.3,
-                      width:screenWidth/11.5,
-                      child: Image.asset(
-                        'assets/person3.jpg',
-                        fit: BoxFit.cover,
-                      )),
-                  Padding(
-                    padding: const EdgeInsets.all(10),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Multi(
-                            color: Colors.black,
-                            subtitle: 'John Maxwel',
-                            weight: FontWeight.bold,
-                            size: 5),
-                        Multi(
-                            color: Colors.black,
-                            subtitle: 'maxwellaustralia@gmail.com',
-                            weight: FontWeight.w500,
-                            size: 3.5),
-                        Multi(
-                            color: Colors.black,
-                            subtitle: '28 November 2023',
-                            weight: FontWeight.w500,
-                            size: 3.5),
-                      ],
-                    ),
-                  )
-                ],
+        GestureDetector(
+          onTap: () {
+            //  Navigator.of(context).pop();
+                                showDialog(
+                                    context: context,
+                                    builder: (context) => const DeleteUser());
+          },
+          child: Container(
+            // height:screenHeight>1400?100:screenHeight>1000?180:150,
+            // width: screenWidth>1350?390:screenWidth>1250?190:screenWidth>1100?170:150,
+            height: screenHeight / 8,
+            width: screenWidth / 3.6,
+            decoration: BoxDecoration(color: Colors.green, boxShadow: [
+              BoxShadow(
+                  blurRadius: 5,
+                  color: Colors.black.withOpacity(0.2),
+                  spreadRadius: 2,
+                  offset: Offset(2, 2))
+            ]),
+            child: Padding(
+              padding: const EdgeInsets.only(left: 3),
+              child: Container(
+                color: Colors.white,
+                child: Row(
+                  children: [
+                    Container(
+                        // height: 100,
+                        // width: 120,
+                        height: screenHeight/6.3,
+                        width:screenWidth/11.5,
+                        child: Image.asset(
+                          'assets/person3.jpg',
+                          fit: BoxFit.cover,
+                        )),
+                    Padding(
+                      padding: const EdgeInsets.all(10),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Multi(
+                              color: Colors.black,
+                              subtitle: 'John Maxwel',
+                              weight: FontWeight.bold,
+                              size: 4),
+                          Multi(
+                              color: Colors.black,
+                              subtitle: 'maxwellaustralia@gmail.com',
+                              weight: FontWeight.w500,
+                              size: 3),
+                          Multi(
+                              color: Colors.black,
+                              subtitle: '28 November 2023',
+                              weight: FontWeight.w500,
+                              size: 3),
+                        ],
+                      ),
+                    )
+                  ],
+                ),
               ),
             ),
           ),

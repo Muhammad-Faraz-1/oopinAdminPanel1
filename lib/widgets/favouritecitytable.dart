@@ -20,7 +20,7 @@ class FavouriteCityTable extends StatelessWidget {
                   color: Colors.black,
                   subtitle: 'Popular Cities',
                   weight: FontWeight.w600,
-                  size: 6),
+                  size: 5),
               Row(
                 children: [
                   Multi(
@@ -76,7 +76,7 @@ class FavouriteCityTable extends StatelessWidget {
           // width: 1000,
           height: screenHeight/1.5,
           width: screenWidth/1.2,
-          child: const Padding(
+          child:  Padding(
             padding: EdgeInsets.symmetric(
               horizontal: 10,
             ),
@@ -93,7 +93,7 @@ class FavouriteCityTable extends StatelessWidget {
                   ],
                 ),
                 SizedBox(
-                  height: 20,
+                  height: screenHeight/33,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,

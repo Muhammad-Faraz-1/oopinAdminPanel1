@@ -16,8 +16,8 @@ class InfoContainer extends StatelessWidget {
     return Container(
       // height:screenHeight>1400?190:screenHeight>1000?170:150,
           // width: screenWidth>1400?200:screenWidth>1250?190:screenWidth>1100?160:150,
-          width: screenWidth/6.5,
-          height: screenHeight/4.6,
+          width: screenWidth/7,
+          height: screenHeight/5,
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(15),
           color: Colors.white,
@@ -41,8 +41,8 @@ class InfoContainer extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Container(
-                      height: screenHeight/43.4,
-                      width: screenWidth/68.3,
+                      height: screenHeight/44,
+                      width: screenWidth/69,
                       child: Image.asset('assets/activeuser.png'),
                     ),
                     SizedBox(
@@ -52,7 +52,7 @@ class InfoContainer extends StatelessWidget {
                         color: const Color.fromARGB(255, 0, 0, 0),
                         subtitle: title,
                         weight: FontWeight.w500,
-                        size: 3)
+                        size: 2)
                   ],
                 ),
                 GestureDetector(
@@ -64,16 +64,16 @@ class InfoContainer extends StatelessWidget {
                     child: Container(
                       // height: 15,
                       // width: 15,
-                      height: screenHeight/50,
-                      width: screenWidth/91,
+                      height: screenHeight/51,
+                      width: screenWidth/92,
                       child: Provider11.visible == 1
                           ? Icon(
                               Icons.visibility,
-                              size: 20,
+                              size: 17,
                             )
                           : Icon(
                               Icons.visibility_off,
-                              size: 20,
+                              size: 17,
                             ),
                       // child: Image.asset('assets/more.png'),
                     ),
@@ -85,15 +85,15 @@ class InfoContainer extends StatelessWidget {
                 color: const Color.fromARGB(255, 54, 69, 79),
                 subtitle: '800',
                 weight: FontWeight.w600,
-                size: 9),
+                size: 7),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Row(
                   children: [
                     Container(
-                      height: screenHeight/43.4,
-                      width: screenWidth/91,
+                      height: screenHeight/44,
+                      width: screenWidth/92,
                       child: Image.asset('assets/increase.png',
                           color: Colors.green),
                     ),
@@ -104,7 +104,7 @@ class InfoContainer extends StatelessWidget {
                         color: Colors.black,
                         subtitle: '85.8%',
                         weight: FontWeight.bold,
-                        size: 3),
+                        size: 2.5),
                   ],
                 ),
                 Row(
@@ -113,7 +113,7 @@ class InfoContainer extends StatelessWidget {
                         color: Colors.black,
                         subtitle: '+15362',
                         weight: FontWeight.w500,
-                        size: 3),
+                        size: 2.5),
                     SizedBox(
                       width: 8,
                     ),
@@ -121,27 +121,27 @@ class InfoContainer extends StatelessWidget {
                         color: Colors.black,
                         subtitle: 'Today',
                         weight: FontWeight.w500,
-                        size: 3),
+                        size: 2.5),
                   ],
                 ),
               ],
             ),
             Divider(thickness: 1.5, color: Color.fromARGB(215, 215, 215, 215)),
             Container(
-              height: screenHeight/32.55,
+              height: screenHeight/33,
               child: Row(
                 children: [
                   Multi(
                       color: Colors.black,
                       subtitle: 'View Details',
                       weight: FontWeight.w500,
-                      size: 3),
+                      size: 2.5),
                   SizedBox(
                     width: 5,
                   ),
                   Icon(
                     Icons.arrow_forward,
-                    size: 15,
+                    size: 12,
                   )
                 ],
               ),

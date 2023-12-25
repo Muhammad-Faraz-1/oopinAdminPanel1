@@ -13,7 +13,7 @@ class UserTable2 extends StatelessWidget {
     return Container(
       height: 500,
       // width: 500,
-      child: const SingleChildScrollView(
+      child:  SingleChildScrollView(
         child: Padding(
           padding: EdgeInsets.all(10),
           child: Column(
@@ -29,7 +29,7 @@ class UserTable2 extends StatelessWidget {
                 ],
                 
               ),
-              SizedBox(height: 20,),
+              SizedBox(height: screenHeight/33,),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -37,7 +37,7 @@ class UserTable2 extends StatelessWidget {
                   NewUserBox2(),
                   NewUserBox2(),
                 ],
-              ),SizedBox(height: 20,),
+              ),SizedBox(height: screenHeight/33,),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -45,7 +45,7 @@ class UserTable2 extends StatelessWidget {
                   NewUserBox2(),
                   NewUserBox2(),
                 ],
-              ),SizedBox(height: 20,),
+              ),SizedBox(height: screenHeight/33,),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -53,7 +53,7 @@ class UserTable2 extends StatelessWidget {
                   NewUserBox2(),
                   NewUserBox2(),
                 ],
-              ),SizedBox(height: 20,),
+              ),SizedBox(height: screenHeight/33,),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -81,7 +81,7 @@ class OopinTable extends StatelessWidget {
     return Container(
       height: screenHeight/1.8,
       width: screenWidth/2.7,
-      child: const SingleChildScrollView(
+      child: SingleChildScrollView(
         child: Padding(
           padding: EdgeInsets.all(10),
           child: Column(
@@ -96,7 +96,7 @@ class OopinTable extends StatelessWidget {
                 ],
                 
               ),
-              SizedBox(height: 20,),
+              SizedBox(height: screenHeight/33,),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -106,7 +106,7 @@ class OopinTable extends StatelessWidget {
                 ],
                 
               ),
-              SizedBox(height: 20,),
+              SizedBox(height: screenHeight/33,),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -114,7 +114,7 @@ class OopinTable extends StatelessWidget {
                  NewOopinBox(),
                  NewOopinBox(),
                 ],
-              ),SizedBox(height: 20,),
+              ),SizedBox(height: screenHeight/33,),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -122,7 +122,7 @@ class OopinTable extends StatelessWidget {
                  NewOopinBox(),
                  NewOopinBox(),
                 ],
-              ),SizedBox(height: 20,),
+              ),SizedBox(height: screenHeight/33,),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [

@@ -11,6 +11,8 @@ class OopinInfoPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double screenWidth = MediaQuery.of(context).size.width;
+    double screenHeight = MediaQuery.of(context).size.height;
     final Provider11 = Provider.of<Provider1>(context);
     return Align(
       alignment: Alignment.center,
@@ -22,8 +24,8 @@ class OopinInfoPage extends StatelessWidget {
         child: Padding(
           padding: const EdgeInsets.all(2),
           child: Container(
-            height: 450,
-            width: 400,
+            height: screenHeight/1.7,
+            width: screenWidth/3.5,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(15),
               color: const Color.fromARGB(255, 3, 71, 80),
@@ -45,8 +47,8 @@ class OopinInfoPage extends StatelessWidget {
                         )),
                   ),
                   const OopinInfo(),
-                  const SizedBox(
-                    height: 20,
+                   SizedBox(
+                    height: screenHeight/33,
                   ),
                   TextButton(
                     onPressed: () {
@@ -63,8 +65,8 @@ class OopinInfoPage extends StatelessWidget {
                     height: 10,
                   ),
                   Container(
-                    height: 35,
-                    width: 200,
+                    height: screenHeight/18.6,
+                    width: screenWidth/7,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(15),
                       color: const Color.fromARGB(255, 252, 145, 63),

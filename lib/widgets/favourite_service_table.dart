@@ -20,7 +20,7 @@ class FavouriteServiceTable extends StatelessWidget {
                   color: Colors.black,
                   subtitle: 'Popular Services',
                   weight: FontWeight.w600,
-                  size: 6),
+                  size: 5),
               Row(
                 children: [
                   Multi(
@@ -68,8 +68,8 @@ class FavouriteServiceTable extends StatelessWidget {
         ),
         Container(
           height: screenHeight/1.5,
-          width: screenWidth/1.1,
-          child: const Padding(
+          width: screenWidth/1.2,
+          child:  Padding(
             padding: EdgeInsets.symmetric(
               horizontal: 10,
             ),
@@ -86,7 +86,7 @@ class FavouriteServiceTable extends StatelessWidget {
                   ],
                 ),
                 SizedBox(
-                  height: 20,
+                  height: screenHeight/33,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,

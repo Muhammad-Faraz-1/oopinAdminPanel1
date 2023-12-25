@@ -32,12 +32,12 @@ class GraphBox extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Multi(color: Colors.black, subtitle: 'Revenue', weight: FontWeight.w600, size: 5),
+                Multi(color: Colors.black, subtitle: 'Revenue', weight: FontWeight.w600, size: 4),
                 Container(
                   // height: 50,
                   // width: 100,
-                  width: screenWidth/14,
-                  height: screenHeight/15,
+                  width: screenWidth/12,
+                  height: screenHeight/16,
                   child: DropDown(),
                   // child: Row(
                   //   children: [
@@ -50,15 +50,15 @@ class GraphBox extends StatelessWidget {
             ),
             Row(
               children: [
-                Multi(color: const Color.fromARGB(255, 54, 69, 79), subtitle: '\$112312315', weight: FontWeight.w700, size: 6),
+                Multi(color: const Color.fromARGB(255, 54, 69, 79), subtitle: '\$112312315', weight: FontWeight.w700, size: 5),
                 SizedBox(width: 10,),
                 Row(
                   children: [
                     Container(
                       // height: 15,
                       // width: 15,
-                      height: screenHeight/50,
-                      width: screenWidth/90,
+                      height: screenHeight/51,
+                      width: screenWidth/91,
                       child: Image.asset('assets/increase.png',
                           color: Colors.green),
                     ),
@@ -77,8 +77,8 @@ class GraphBox extends StatelessWidget {
             Container(
               // height: 250,
               // width: 700,
-              height: screenHeight/4.5,
-              width: screenWidth/2,
+              height: screenHeight/5,
+              width: screenWidth/2.2,
               color: Colors.green,
             )
           ]

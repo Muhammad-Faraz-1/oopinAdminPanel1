@@ -23,7 +23,7 @@ class screen extends StatelessWidget {
       padding: const EdgeInsets.all(10),
       child: Container(
         height: screenHeight,
-        width: screenWidth - 90,
+        width: screenWidth /1.08,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(15),
           color: Colors.white,

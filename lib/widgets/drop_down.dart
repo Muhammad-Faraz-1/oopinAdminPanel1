@@ -34,7 +34,7 @@ class _DropDownState extends State<DropDown> {
     return DropdownButtonHideUnderline(
       child: Container(
         // width: 150,
-        width: screenWidth/9.5,
+        width: screenWidth/9.9,
         child: DropdownButton(
           dropdownColor: Color.fromARGB(255, 255, 255, 255),
           // Initial Value

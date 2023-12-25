@@ -30,7 +30,7 @@ class TopOopinTable extends StatelessWidget {
             DataTable(
               dataRowMaxHeight: 60,
               dataRowMinHeight: 15,
-              columnSpacing: screenWidth/15,
+              columnSpacing: screenWidth/16,
               columns: [
               DataColumn(
                   label: Multi(

@@ -15,8 +15,8 @@ class RatingBox extends StatelessWidget {
         Container(
           // height:screenHeight>1400?190:screenHeight>1000?170:150,
           // width: screenWidth>1400?200:screenWidth>1250?190:screenWidth>1100?170:150,
-          width: screenWidth/6.5,
-          height: screenHeight/4.6,
+          width: screenWidth/7,
+          height: screenHeight/5,
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(15),
               color: Colors.white,
@@ -36,7 +36,7 @@ class RatingBox extends StatelessWidget {
                     color: Colors.black,
                     subtitle: 'Rating',
                     weight: FontWeight.w400,
-                    size: 6),
+                    size: 5),
                 Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -44,10 +44,10 @@ class RatingBox extends StatelessWidget {
                         color: Colors.black,
                         subtitle: '4.2',
                         weight: FontWeight.bold,
-                        size: 11),
+                        size: 10),
                     Icon(
                       Icons.star,
-                      size: 15,
+                      size: 12,
                       color: Colors.yellow,
                     )
                   ],
@@ -58,12 +58,12 @@ class RatingBox extends StatelessWidget {
                         color: Colors.black,
                         subtitle: 'Total Reviews: ',
                         weight: FontWeight.w500,
-                        size: 2.5),
+                        size: 2),
                     Multi(
                         color: Colors.black,
                         subtitle: '175',
                         weight: FontWeight.w500,
-                        size: 3.5),
+                        size: 3),
                   ],
                 ),
                 //     GestureDetector(
@@ -83,8 +83,8 @@ class RatingBox extends StatelessWidget {
             child: Container(
                 // height: 80,
                 // width: screenWidth>1400?120:screenWidth>1300?80:60,
-                width: screenWidth/12,
-                height: screenHeight/10,
+                width: screenWidth/13,
+                height: screenHeight/11,
                 child: Image.asset('assets/medal.png')))
       ],
     );

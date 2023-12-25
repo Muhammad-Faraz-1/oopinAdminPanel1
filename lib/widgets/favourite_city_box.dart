@@ -31,7 +31,7 @@ class FavouriteCity extends StatelessWidget {
                 Container(
                   // height: 140,
                   // width: 200,
-                  width: screenWidth/7.5,
+                  width: screenWidth/8,
                   height: screenHeight/5,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(5),
@@ -42,7 +42,7 @@ class FavouriteCity extends StatelessWidget {
                     child: Image.asset('assets/blackburn.jpg',fit: BoxFit.cover,)),
                 ),
                 Container(
-                  width: screenWidth/7.5,
+                  width: screenWidth/8,
                   height: screenHeight/5,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(5),
@@ -56,7 +56,7 @@ class FavouriteCity extends StatelessWidget {
                       color: Color.fromARGB(255, 255, 255, 255),
                       subtitle: 'Blackburn',
                       weight: FontWeight.w500,
-                      size: 5),
+                      size: 4),
         ),
               ],
             ),
@@ -76,8 +76,8 @@ class FavouriteCity extends StatelessWidget {
                   child:Provider11.ishover2==false?Container(
                     // height: 50,
                     // width: 210,
-                    height: screenHeight/13,
-                    width: screenWidth/7.5,
+                    height: screenHeight/13.5,
+                    width: screenWidth/8,
                     decoration: BoxDecoration(
                       color: Colors.black,
                       borderRadius: BorderRadius.circular(5)
@@ -92,7 +92,7 @@ class FavouriteCity extends StatelessWidget {
                             // color: Colors.black,
                             subtitle: 'Add To Popular',
                             weight: FontWeight.w500,
-                            size: 5)
+                            size: 4)
                         )
                             
                       ),
@@ -101,8 +101,8 @@ class FavouriteCity extends StatelessWidget {
                   Container(
                     // height: 50,
                     // width: 210,
-                    height: screenHeight/13,
-                    width: screenWidth/7.5,
+                    height: screenHeight/13.5,
+                    width: screenWidth/8,
                     decoration: BoxDecoration(
                       color: Colors.blue,
                       borderRadius: BorderRadius.circular(5)

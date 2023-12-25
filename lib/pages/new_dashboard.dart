@@ -21,66 +21,91 @@ class NewDashboard extends StatelessWidget {
         width: screenWidth,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(15),
-        color: const Color.fromARGB(255,247, 247, 249),
+          color: const Color.fromARGB(255, 247, 247, 249),
         ),
         child: SingleChildScrollView(
           child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 20,vertical: 10),
+            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
             child: Column(
               children: [
-               TopBar(),
-                 Row(
+                TopBar(),
+                Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Column(
                       children: [
                         RatingBox(),
-                        SizedBox(height:20,),
+                        SizedBox(
+                          height: screenHeight / 33
+                        ),
                         RatingBox(),
                       ],
                     ),
                     Column(
                       children: [
-                        InfoContainer(title: 'Active Oopins',),
-                        SizedBox(height:20,),
-                        InfoContainer(title: 'Active Users',),
+                        InfoContainer(
+                          title: 'Active Oopins',
+                        ),
+                        SizedBox(
+                          height: screenHeight / 33,
+                        ),
+                        InfoContainer(
+                          title: 'Active Users',
+                        ),
                       ],
                     ),
                     // ),SizedBox(width: 10,),
                     Column(
                       children: [
-                        InfoContainer(title: 'Inactive Oopins',),
-                        SizedBox(height: 20),
-                        InfoContainer(title: 'Inactive Users',),
+                        InfoContainer(
+                          title: 'Inactive Oopins',
+                        ),
+                        SizedBox(
+                          height: screenHeight / 33,
+                        ),
+                        InfoContainer(
+                          title: 'Inactive Users',
+                        ),
                       ],
                     ),
-                     Column(
+                    Column(
                       children: [
-                        InfoContainer(title: 'Total Cities',),
-                        SizedBox(height: 20,),
-                        InfoContainer(title: 'Total Services',),
+                        InfoContainer(
+                          title: 'Total Cities',
+                        ),
+                        SizedBox(
+                          height: screenHeight / 33,
+                        ),
+                        InfoContainer(
+                          title: 'Total Services',
+                        ),
                       ],
                     ),
                     Container(
                       // height:screenHeight>1400?250:screenHeight>1000?380:350,
                       decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(15),
-          color: Colors.white,
-          boxShadow: [
-            BoxShadow(
-                blurRadius: 5,
-                color: Colors.black.withOpacity(0.2),
-                spreadRadius: 2,
-                offset: Offset(2, 2))
-          ]),
+                          borderRadius: BorderRadius.circular(15),
+                          color: Colors.white,
+                          boxShadow: [
+                            BoxShadow(
+                                blurRadius: 5,
+                                color: Colors.black.withOpacity(0.2),
+                                spreadRadius: 2,
+                                offset: Offset(2, 2))
+                          ]),
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.start,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Padding(
-                            padding: const EdgeInsets.symmetric(horizontal: 10,vertical: 10),
-                            child: Multi(color: Colors.black, subtitle: 'Top Cities', weight: FontWeight.w500, size: 5),
+                            padding: const EdgeInsets.symmetric(
+                                horizontal: 10, vertical: 10),
+                            child: Multi(
+                                color: Colors.black,
+                                subtitle: 'Top Cities',
+                                weight: FontWeight.w500,
+                                size: 5),
                           ),
                           // SizedBox(height: 10),
                           TopCityColumn(),
@@ -89,20 +114,18 @@ class NewDashboard extends StatelessWidget {
                     ),
                   ],
                 ),
-                SizedBox(height:20),
+                SizedBox(height: screenHeight/33),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        TopOopinTable(),
-                        GraphBox(),
-                        
-                      ],
-                    )
+                  children: [
+                    TopOopinTable(),
+                    GraphBox(),
+                  ],
+                )
               ],
             ),
           ),
         ),
-      
       ),
     );
   }

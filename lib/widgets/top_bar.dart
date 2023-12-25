@@ -37,7 +37,7 @@ class TopBar extends StatelessWidget {
                                             : Provider11.lastAction == 7
                                             ?  'Agora Dashboard'
                                                 : 'Dashboard', 
-                        weight: FontWeight.w600, size: 6),
+                        weight: FontWeight.w600, size: 5),
                         Row(
                           children: [
                             Container(
@@ -52,7 +52,7 @@ class TopBar extends StatelessWidget {
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Multi(color: Colors.black, subtitle: 'Hello, Faraz', weight: FontWeight.bold, size: 4),
+                                Multi(color: Colors.black, subtitle: 'Hello, Faraz', weight: FontWeight.bold, size: 3.5),
                                 Row(
                                   children: [
                                     Container(
