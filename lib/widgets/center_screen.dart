@@ -39,28 +39,28 @@ class screen extends StatelessWidget {
         // child: OopinComplains(),
         // child: UserComplaints(),
         // child: RecordingsPage(),
-        // child: OopinCompleteInfo(),
+        child: OopinCompleteInfo(),
         // child: HelpDesk(),
         // child: InAppManagement(),
-        child: Provider11.lastAction == 0
-            ? const NewDashboard()
-            : Provider11.lastAction == 1
-                ? const UsersPage()
-                : Provider11.lastAction == 2
-                    ? const InAppManagement()
-                    : Provider11.lastAction == 3
-                        ? const RecordingsPage()
-                        : Provider11.lastAction == 4
-                            ? Request()
-                            : Provider11.lastAction == 5
-                                ? const Features()
-                                : Provider11.lastAction == 6
-                                    ? const HelpDesk()
-                                    : Provider11.lastAction == 7
-                                        ? const Agora()
-                                        : Provider11.lastAction == 8
-                                            ? const OopinCompleteInfo()
-                                            : const NewDashboard(),
+        // child: Provider11.lastAction == 0
+        //     ? const NewDashboard()
+        //     : Provider11.lastAction == 1
+        //         ? const UsersPage()
+        //         : Provider11.lastAction == 2
+        //             ? const InAppManagement()
+        //             : Provider11.lastAction == 3
+        //                 ? const RecordingsPage()
+        //                 : Provider11.lastAction == 4
+        //                     ? Request()
+        //                     : Provider11.lastAction == 5
+        //                         ? const Features()
+        //                         : Provider11.lastAction == 6
+        //                             ? const HelpDesk()
+        //                             : Provider11.lastAction == 7
+        //                                 ? const Agora()
+        //                                 : Provider11.lastAction == 8
+        //                                     ? const OopinCompleteInfo()
+        //                                     : const NewDashboard(),
       ),
     );
   }

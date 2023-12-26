@@ -125,19 +125,19 @@ class NewServiceBox extends StatelessWidget {
                         color: Color.fromARGB(255, 0, 0, 0),
                         subtitle: servicename,
                         weight: FontWeight.w600,
-                        size: 7),
+                        size: 5.5),
                     Multi(
                         color: Color.fromARGB(255, 0, 0, 0),
                         subtitle: 'Description',
                         weight: FontWeight.w500,
-                        size: 5),
+                        size: 4.5),
                     Flexible(
                       child: Multi(
                           color: Color.fromARGB(255, 2, 2, 2),
                           subtitle:
                               'The foodservice (US English) or catering (British English) industry includes the businesses, institutions, and companies which prepare meals outside the home. It includes restaurants, grocery stores, school and hospital cafeterias, catering operations, and many other formats.includes the businesses, institutions, and companies which prepare meals outside the home. It includes restaurants, grocery stores, school ',
                           weight: FontWeight.w500,
-                          size: 4),
+                          size: 3),
                     ),
                     SizedBox(height: 10,),
                     

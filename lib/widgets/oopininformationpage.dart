@@ -24,7 +24,7 @@ class OopinInfoPage extends StatelessWidget {
         child: Padding(
           padding: const EdgeInsets.all(2),
           child: Container(
-            height: screenHeight/1.7,
+            height: screenHeight/1.5,
             width: screenWidth/3.5,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(15),

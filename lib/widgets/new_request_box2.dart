@@ -142,8 +142,8 @@ class Newbox extends StatelessWidget {
     return Container(
       // height: 270,
       // width: 250,
-            width: screenWidth/5.4,
-            height: screenHeight/2.4,
+            width: screenWidth/6.2,
+            height: screenHeight/3,
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(15),
           color: Colors.white,
@@ -166,7 +166,7 @@ class Newbox extends StatelessWidget {
             child: Padding(
               padding: const EdgeInsets.all(2),
               child: CircleAvatar(
-                radius: MediaQuery.of(context).size.width * 0.03,
+                radius: MediaQuery.of(context).size.width * 0.019,
                 backgroundImage: AssetImage('assets/person1.jpg'),
               ),
             ),
@@ -181,7 +181,7 @@ class Newbox extends StatelessWidget {
                       color: Color.fromARGB(255, 0, 0, 0),
                       subtitle: 'Jack Collins',
                       weight: FontWeight.w500,
-                      size: 5),
+                      size: 4),
                 ],
               ),
               Row(
@@ -192,7 +192,7 @@ class Newbox extends StatelessWidget {
                       color: Color.fromARGB(255, 0, 0, 0),
                       subtitle: 'London',
                       weight: FontWeight.w500,
-                      size: 4),
+                      size: 3),
                 ],
               ),
               Row(
@@ -203,7 +203,7 @@ class Newbox extends StatelessWidget {
                       color: Color.fromARGB(255, 0, 0, 0),
                       subtitle: 'jack.collins@gmail.com',
                       weight: FontWeight.w500,
-                      size: 4),
+                      size: 3),
                 ],
               ),
             ],
@@ -211,8 +211,8 @@ class Newbox extends StatelessWidget {
           Container(
             // height: 30,
             // width: 100,
-            width: screenWidth/13.66,
-            height: screenHeight/20,
+            width: screenWidth/14,
+            height: screenHeight/22,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(5),
               color: Color.fromARGB(255, 0, 0, 0),
@@ -231,8 +231,8 @@ class Newbox extends StatelessWidget {
                   child: Multi(
                       color: Color.fromARGB(255, 0, 0, 0),
                       subtitle: 'Action',
-                      weight: FontWeight.w400,
-                      size: 4),
+                      weight: FontWeight.w500,
+                      size: 3),
                 ),
               ),
             ),

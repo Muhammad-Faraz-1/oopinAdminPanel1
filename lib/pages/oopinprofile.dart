@@ -28,8 +28,8 @@ class OopinCompleteInfo extends StatelessWidget {
               Column(
                 children: [
                   Container(
-                    height: screenHeight/2.17,
-                    width: screenWidth/1.95,
+                    height: screenHeight/2.15,
+                    width: screenWidth/1.8,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(5),
                       color: const Color.fromARGB(255, 252, 145, 63),

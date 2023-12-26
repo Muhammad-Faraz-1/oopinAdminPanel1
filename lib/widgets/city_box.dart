@@ -27,8 +27,8 @@ class CityBox extends StatelessWidget {
             Stack(
               children: [
                 Container(
-                  height: screenHeight / 4.34,
-                  width: screenWidth / 6.1,
+                  height: screenHeight / 5,
+                  width: screenWidth / 6.5,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(5),
                     color: Colors.transparent,
@@ -41,8 +41,8 @@ class CityBox extends StatelessWidget {
                       )),
                 ),
                 Container(
-                  height: screenHeight / 4.34,
-                  width: screenWidth / 6.1,
+                  height: screenHeight / 5,
+                  width: screenWidth / 6.5,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(5),
                     color: const Color.fromARGB(0, 0, 0, 0).withOpacity(0.5),

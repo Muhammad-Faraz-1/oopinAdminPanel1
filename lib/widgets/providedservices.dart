@@ -6,9 +6,11 @@ class ProvidedService extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double screenWidth = MediaQuery.of(context).size.width;
+    double screenHeight = MediaQuery.of(context).size.height;
     return Container(
-      height: 110,
-      width: 350,
+      height: screenHeight/6.2,
+      width: screenWidth/2.48,
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(15),
           color: Colors.white,
@@ -27,8 +29,8 @@ class ProvidedService extends StatelessWidget {
             Column(
               children: [
                 Container(
-                  height:70,
-                  width: 70,
+                  height:screenHeight/9.5,
+                  width: screenWidth/20,
                   child: const CircleAvatar(
                     radius: 25,
                     backgroundImage:AssetImage('assets/city.jpg') ,
@@ -43,22 +45,22 @@ class ProvidedService extends StatelessWidget {
                 color: Colors.black,
                 subtitle: 'Service: ',
                 weight: FontWeight.w400,
-                size: 4),
+                size: 3.5),
                 Multi(
                 color: Colors.black,
                 subtitle: 'Sub Service: ',
                 weight: FontWeight.w400,
-                size: 4),
+                size: 3.5),
                 Multi(
                 color: Colors.black,
                 subtitle: 'City: ',
                 weight: FontWeight.w400,
-                size: 4),
+                size: 3.5),
                 Multi(
                 color: Colors.black,
                 subtitle: 'Ratings: ',
                 weight: FontWeight.w400,
-                size: 4),
+                size: 3.5),
                 
               ],
             ),
@@ -69,24 +71,24 @@ class ProvidedService extends StatelessWidget {
                 color: Colors.black,
                 subtitle: 'Academics',
                 weight: FontWeight.w400,
-                size: 4),
+                size: 3.5),
                 Multi(
                 color: Colors.black,
                 subtitle: 'none',
                 weight: FontWeight.w400,
-                size: 4),
+                size: 3.5),
                 Multi(
                 color: Colors.black,
                 subtitle: 'Birmingham',
                 weight: FontWeight.w400,
-                size: 4),
+                size: 3.5),
                 Row(
                   children: [
-                    Icon(Icons.star,color: Colors.yellow,size: 15,),
-                          Icon(Icons.star,color: Colors.yellow,size: 15,),
-                          Icon(Icons.star,color: Colors.yellow,size: 15,),
-                          Icon(Icons.star,color: Colors.yellow,size: 15,),
-                          Icon(Icons.star,color: Colors.yellow,size: 15,),
+                    Icon(Icons.star,color: Colors.yellow,size: screenWidth/92,),
+                          Icon(Icons.star,color: Colors.yellow,size: screenWidth/92,),
+                          Icon(Icons.star,color: Colors.yellow,size: screenWidth/92,),
+                          Icon(Icons.star,color: Colors.yellow,size: screenWidth/92,),
+                          Icon(Icons.star,color: Colors.yellow,size: screenWidth/92,),
                   ],
                 )
               ],

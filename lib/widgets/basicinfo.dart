@@ -45,8 +45,8 @@ class BasicInfoOopin extends StatelessWidget {
             child: Row(
               children: [
                 Container(
-                  height: screenHeight/3.25,
-                  width: screenWidth/6.93,
+                  height: screenHeight/3.5,
+                  width: screenWidth/7,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(05),
                     color: Colors.transparent,
@@ -73,15 +73,15 @@ class BasicInfoOopin extends StatelessWidget {
                             Multi(
                                 color: Color.fromARGB(255, 0, 0, 0),
                                 subtitle: 'Danial Smith',
-                                weight: FontWeight.w600,
-                                size: 10),
+                                weight: FontWeight.w500,
+                                size: 7),
                             Row(
                               children: [
                                 Multi(
                                     color:
                                         Color.fromARGB(255, 0, 0, 0),
                                     subtitle: 'Ratings:  ',
-                                    weight: FontWeight.w400,
+                                    weight: FontWeight.w500,
                                     size: 3),
                                 Icon(
                                   Icons.star,
@@ -118,7 +118,7 @@ class BasicInfoOopin extends StatelessWidget {
                         Row(
                           children: [
                             Container(
-                                height: screenHeight/43.4,
+                                height: screenHeight/44,
                                 width: screenWidth/91,
                                 child: Image.asset(
                                   'assets/email.png',
@@ -130,22 +130,22 @@ class BasicInfoOopin extends StatelessWidget {
                             Multi(
                                 color: Color.fromARGB(255, 0, 0, 0),
                                 subtitle: 'Email: ',
-                                weight: FontWeight.w400,
-                                size: 4),
+                                weight: FontWeight.w500,
+                                 size: 3),
                             SizedBox(
                               width: 10,
                             ),
                             Multi(
                                 color: Color.fromARGB(255, 0, 0, 0),
                                 subtitle: 'smith123@gmail.com',
-                                weight: FontWeight.w400,
-                                size: 4),
+                                weight: FontWeight.w500,
+                                 size: 3),
                           ],
                         ),
                         Row(
                           children: [
                             Container(
-                                height: screenHeight/43.4,
+                               height: screenHeight/44,
                                 width: screenWidth/91,
                                 child: Image.asset(
                                   'assets/location.png',
@@ -157,22 +157,22 @@ class BasicInfoOopin extends StatelessWidget {
                             Multi(
                                 color: Color.fromARGB(255, 0, 0, 0),
                                 subtitle: 'Address: ',
-                                weight: FontWeight.w400,
-                                size: 4),
+                                weight: FontWeight.w500,
+                                 size: 3),
                             SizedBox(
                               width: 10,
                             ),
                             Multi(
                                 color: Color.fromARGB(255, 0, 0, 0),
                                 subtitle: '49 Featherstone Street,LONDON',
-                                weight: FontWeight.w400,
-                                size: 4),
+                                weight: FontWeight.w500,
+                                 size: 3),
                           ],
                         ),
                         Row(
                           children: [
                             Container(
-                                height: screenHeight/43.4,
+                                height: screenHeight/44,
                                 width: screenWidth/91,
                                 child: Image.asset(
                                   'assets/phone.png',
@@ -184,22 +184,22 @@ class BasicInfoOopin extends StatelessWidget {
                             Multi(
                                 color: Color.fromARGB(255, 0, 0, 0),
                                 subtitle: 'Contact ',
-                                weight: FontWeight.w400,
-                                size: 4),
+                                weight: FontWeight.w500,
+                                 size: 3),
                             SizedBox(
                               width: 10,
                             ),
                             Multi(
                                 color: Color.fromARGB(255, 0, 0, 0),
                                 subtitle: '0044 12345678',
-                                weight: FontWeight.w400,
-                                size: 4),
+                                weight: FontWeight.w500,
+                                 size: 3),
                           ],
                         ),
                         Row(
                           children: [
                             Container(
-                                height: screenHeight/43.4,
+                                height: screenHeight/44,
                                 width: screenWidth/91,
                                 child: Image.asset(
                                   'assets/user.png',
@@ -211,22 +211,22 @@ class BasicInfoOopin extends StatelessWidget {
                             Multi(
                                 color: const Color.fromARGB(255,0,0,0),
                                 subtitle: 'Age ',
-                                weight: FontWeight.w400,
-                                size: 4),
+                                weight: FontWeight.w500,
+                                 size: 3),
                             SizedBox(
                               width: 10,
                             ),
                             Multi(
                                 color: const Color.fromARGB(255,0,0,0),
                                 subtitle: '28',
-                                weight: FontWeight.w400,
-                                size: 4),
+                                weight: FontWeight.w500,
+                                 size: 3),
                           ],
                         ),
                         Row(
                           children: [
                             Container(
-                                height: screenHeight/43.4,
+                                height: screenHeight/44,
                                 width: screenWidth/91,
                                 child: Image.asset(
                                   'assets/city.png',
@@ -238,16 +238,16 @@ class BasicInfoOopin extends StatelessWidget {
                             Multi(
                                 color: const Color.fromARGB(255,0,0,0),
                                 subtitle: 'City ',
-                                weight: FontWeight.w400,
-                                size: 4),
+                                weight: FontWeight.w500,
+                                 size: 3),
                             SizedBox(
                               width: 10,
                             ),
                             Multi(
                                 color: const Color.fromARGB(255,0,0,0),
                                 subtitle: 'London',
-                                weight: FontWeight.w400,
-                                size: 4),
+                                weight: FontWeight.w500,
+                                 size: 3),
                           ],
                         ),
                       ],
@@ -255,7 +255,7 @@ class BasicInfoOopin extends StatelessWidget {
                   ),
                 ),
                 Container(
-                  height: screenHeight/2.95,
+                  height: screenHeight/3,
                   width: screenWidth/2.6,
                   child: Column(
                     children: [
@@ -263,8 +263,8 @@ class BasicInfoOopin extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Container(
-                            height: screenHeight/3.2,
-                            width: screenWidth/5.1,
+                            height: screenHeight/3.5,
+                            width: screenWidth/5.5,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(05),
                               color: Colors.transparent,
@@ -277,7 +277,7 @@ class BasicInfoOopin extends StatelessWidget {
                                 )),
                           ),
                           Container(
-                            height: screenHeight/3.2,
+                            height: screenHeight/3.5,
                             width: screenWidth/5.5,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(05),

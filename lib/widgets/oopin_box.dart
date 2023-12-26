@@ -114,7 +114,6 @@ import 'package:opin_app/widgets/oopininformationpage.dart';
 //   }
 // }
 
-
 class NewOopinBox extends StatelessWidget {
   const NewOopinBox({super.key});
 
@@ -125,26 +124,21 @@ class NewOopinBox extends StatelessWidget {
     return Stack(
       children: [
         GestureDetector(
-          onTap: (){
-             showDialog(
-                            context: context,
-                            builder: (context) => OopinInfoPage());
+          onTap: () {
+            showDialog(context: context, builder: (context) => OopinInfoPage());
           },
           child: Container(
-          //   height: 120,
-          // width: 390,
-          height: screenHeight/7,
-          width: screenWidth/4,
-            decoration: BoxDecoration(
-             color: Colors.green,
-                  boxShadow: [
-                    BoxShadow(
-                        blurRadius: 5,
-                        color: Colors.black.withOpacity(0.2),
-                        spreadRadius: 2,
-                        offset: Offset(2, 2))
-                  ]
-            ),
+            //   height: 120,
+            // width: 390,
+            height: screenHeight / 7,
+            width: screenWidth / 4,
+            decoration: BoxDecoration(color: Colors.green, boxShadow: [
+              BoxShadow(
+                  blurRadius: 5,
+                  color: Colors.black.withOpacity(0.2),
+                  spreadRadius: 2,
+                  offset: Offset(2, 2))
+            ]),
             child: Padding(
               padding: const EdgeInsets.only(left: 3),
               child: Container(
@@ -152,37 +146,56 @@ class NewOopinBox extends StatelessWidget {
                 child: Row(
                   children: [
                     Container(
-                      // height: 120,
-                      // width: 120,
-                      height: screenHeight/6.3,
-                      width:screenWidth/11.5,
-                      child: Image.asset('assets/person4.jpg',fit: BoxFit.fill,)),
-                      Padding(
-                        padding: const EdgeInsets.all(10),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Multi(color: Colors.black, subtitle: 'Noman Ali', weight: FontWeight.bold, size: 4),
-                            Multi(color: Colors.black, subtitle: 'nomanaliahmed@gmail.com', weight: FontWeight.w500, size: 2.5),
-                            Multi(color: Colors.black, subtitle: '3 November 2023', weight: FontWeight.w400, size: 2.5),
-                            Multi(color: Colors.black, subtitle: 'Manchester', weight: FontWeight.w400, size: 2.5),
-                          ],
-                        ),
-                      )
+                        // height: 120,
+                        // width: 120,
+                        height: screenHeight / 6.3,
+                        width: screenWidth / 11.5,
+                        child: Image.asset(
+                          'assets/person4.jpg',
+                          fit: BoxFit.fill,
+                        )),
+                    Padding(
+                      padding: const EdgeInsets.all(10),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Multi(
+                              color: Colors.black,
+                              subtitle: 'Noman Ali',
+                              weight: FontWeight.bold,
+                              size: 4),
+                          Multi(
+                              color: Colors.black,
+                              subtitle: 'nomanaliahmed@gmail.com',
+                              weight: FontWeight.w500,
+                              size: 2.5),
+                          Multi(
+                              color: Colors.black,
+                              subtitle: '3 November 2023',
+                              weight: FontWeight.w400,
+                              size: 2.5),
+                          Multi(
+                              color: Colors.black,
+                              subtitle: 'Manchester',
+                              weight: FontWeight.w400,
+                              size: 2.5),
+                        ],
+                      ),
+                    )
                   ],
                 ),
               ),
             ),
           ),
         ),
-         Positioned(
+        Positioned(
           right: 5,
           top: 5,
           child: Container(
             // height: 25,
             // width: 25,
-            width: screenWidth/54,
-            height: screenHeight/26,
+            width: screenWidth / 54,
+            height: screenHeight / 26,
             child: Image.asset('assets/delete.png'),
           ),
         ),
@@ -192,8 +205,8 @@ class NewOopinBox extends StatelessWidget {
           child: Container(
             // height: 25,
             // width: 25,
-            width: screenWidth/54,
-            height: screenHeight/26,
+            width: screenWidth / 54,
+            height: screenHeight / 26,
             child: Image.asset('assets/check.png'),
           ),
         )

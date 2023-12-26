@@ -38,20 +38,20 @@ class TermsAndConditions extends StatelessWidget {
                           children: [
                             Row(
                               children: [
-                                Multi(color: Colors.black, subtitle: 'Main Heading', weight: FontWeight.bold, size: 10),
+                                Multi(color: Colors.black, subtitle: 'Main Heading', weight: FontWeight.bold, size: 8),
                                 IconButton(onPressed: (){}, icon: Icon(Icons.edit))
                               ],
                             ),
                             Row(
                               children: [
                                 SizedBox(width: 20,),
-                                Multi(color: Colors.black, subtitle: 'Some text on this line about something', weight: FontWeight.w400, size: 4),
+                                Multi(color: Colors.black, subtitle: 'Some text on this line about something', weight: FontWeight.w400, size: 3),
                               ],
                             ),
                             Row(
                               children: [
                                 SizedBox(width: 40,),
-                                Multi(color: Colors.black, subtitle: 'Sub Heading 1', weight: FontWeight.w700, size: 7),
+                                Multi(color: Colors.black, subtitle: 'Sub Heading 1', weight: FontWeight.w700, size: 5.5),
                                 IconButton(onPressed: (){}, icon: Icon(Icons.edit))
                               ],
                             ),
@@ -63,10 +63,10 @@ class TermsAndConditions extends StatelessWidget {
                                   child: Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
-                                      Multi(color: Colors.black, subtitle: 'Point 1: babdmsbabdasnf sfnmdbsnmfbasdb sadbfnmdbsfnbanmsd fbdnsmfbndmsaf sdfnmdsbfnmsdabf dnbafnmdbsfnmbsdnmafbnmsdabf dnsbafnmdbsnmafbnmdsbfnmdsbfnmsdb dsfbn ', weight: FontWeight.w400, size: 4),
-                                       Multi(color: Colors.black, subtitle: 'Point 2: afbnmdsbfsdn sdfndsbfndsa sdnbafnmd dsbnmd dsfbsd', weight: FontWeight.w400, size: 4),
-                                        Multi(color: Colors.black, subtitle: 'Point 3: jbdsnm dsfb d sdb  db dafb sd d  dhbdsbfsdbfbasddbsnmbafnm', weight: FontWeight.w400, size: 4),
-                                         Multi(color: Colors.black, subtitle: 'Point 3: jbdsnm dsfb d sdb  db dafb sd d  dhbdsbfsdbfbasddbsnmbafnm', weight: FontWeight.w400, size: 4)
+                                      Multi(color: Colors.black, subtitle: 'Point 1: babdmsbabdasnf sfnmdbsnmfbasdb sadbfnmdbsfnbanmsd fbdnsmfbndmsaf sdfnmdsbfnmsdabf dnbafnmdbsfnmbsdnmafbnmsdabf dnsbafnmdbsnmafbnmdsbfnmdsbfnmsdb dsfbn ', weight: FontWeight.w400, size: 3),
+                                       Multi(color: Colors.black, subtitle: 'Point 2: afbnmdsbfsdn sdfndsbfndsa sdnbafnmd dsbnmd dsfbsd', weight: FontWeight.w400, size: 3),
+                                        Multi(color: Colors.black, subtitle: 'Point 3: jbdsnm dsfb d sdb  db dafb sd d  dhbdsbfsdbfbasddbsnmbafnm', weight: FontWeight.w400, size: 3),
+                                         Multi(color: Colors.black, subtitle: 'Point 3: jbdsnm dsfb d sdb  db dafb sd d  dhbdsbfsdbfbasddbsnmbafnm', weight: FontWeight.w400, size: 3)
                                     ],
                                   ),
                                 ),
@@ -75,7 +75,7 @@ class TermsAndConditions extends StatelessWidget {
                              Row(
                               children: [
                                 SizedBox(width: 40,),
-                                Multi(color: Colors.black, subtitle: 'Sub Heading 2', weight: FontWeight.w700, size: 7),
+                                Multi(color: Colors.black, subtitle: 'Sub Heading 2', weight: FontWeight.w700, size: 5.5),
                                 IconButton(onPressed: (){}, icon: Icon(Icons.edit))
                               ],
                             ),
@@ -87,10 +87,10 @@ class TermsAndConditions extends StatelessWidget {
                                   child: Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
-                                      Multi(color: Colors.black, subtitle: 'Point 1: babdmsbabdasnf sfnmdbsnmfbasdb sadbfnmdbsfnbanmsd fbdnsmfbndmsaf sdfnmdsbfnmsdabf dnbafnmdbsfnmbsdnmafbnmsdabf dnsbafnmdbsnmafbnmdsbfnmdsbfnmsdb dsfbn ', weight: FontWeight.w400, size: 4),
-                                       Multi(color: Colors.black, subtitle: 'Point 2: afbnmdsbfsdn sdfndsbfndsa sdnbafnmd dsbnmd dsfbsd', weight: FontWeight.w400, size: 4),
-                                        Multi(color: Colors.black, subtitle: 'Point 3: jbdsnm dsfb d sdb  db dafb sd d  dhbdsbfsdbfbasddbsnmbafnm', weight: FontWeight.w400, size: 4),
-                                         Multi(color: Colors.black, subtitle: 'Point 3: jbdsnm dsfb d sdb  db dafb sd d  dhbdsbfsdbfbasddbsnmbafnm', weight: FontWeight.w400, size: 4)
+                                      Multi(color: Colors.black, subtitle: 'Point 1: babdmsbabdasnf sfnmdbsnmfbasdb sadbfnmdbsfnbanmsd fbdnsmfbndmsaf sdfnmdsbfnmsdabf dnbafnmdbsfnmbsdnmafbnmsdabf dnsbafnmdbsnmafbnmdsbfnmdsbfnmsdb dsfbn ', weight: FontWeight.w400, size: 3),
+                                       Multi(color: Colors.black, subtitle: 'Point 2: afbnmdsbfsdn sdfndsbfndsa sdnbafnmd dsbnmd dsfbsd', weight: FontWeight.w400, size: 3),
+                                        Multi(color: Colors.black, subtitle: 'Point 3: jbdsnm dsfb d sdb  db dafb sd d  dhbdsbfsdbfbasddbsnmbafnm', weight: FontWeight.w400, size: 3),
+                                         Multi(color: Colors.black, subtitle: 'Point 3: jbdsnm dsfb d sdb  db dafb sd d  dhbdsbfsdbfbasddbsnmbafnm', weight: FontWeight.w400, size: 3)
                                     ],
                                   ),
                                 ),
@@ -99,7 +99,7 @@ class TermsAndConditions extends StatelessWidget {
                              Row(
                               children: [
                                 SizedBox(width: 40,),
-                                Multi(color: Colors.black, subtitle: 'Sub Heading 3', weight: FontWeight.w700, size: 7),
+                                Multi(color: Colors.black, subtitle: 'Sub Heading 3', weight: FontWeight.w700, size: 5.5),
                                 IconButton(onPressed: (){}, icon: Icon(Icons.edit))
                               ],
                             ),
@@ -111,10 +111,10 @@ class TermsAndConditions extends StatelessWidget {
                                   child: Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
-                                      Multi(color: Colors.black, subtitle: 'Point 1: babdmsbabdasnf sfnmdbsnmfbasdb sadbfnmdbsfnbanmsd fbdnsmfbndmsaf sdfnmdsbfnmsdabf dnbafnmdbsfnmbsdnmafbnmsdabf dnsbafnmdbsnmafbnmdsbfnmdsbfnmsdb dsfbn ', weight: FontWeight.w400, size: 4),
-                                       Multi(color: Colors.black, subtitle: 'Point 2: afbnmdsbfsdn sdfndsbfndsa sdnbafnmd dsbnmd dsfbsd', weight: FontWeight.w400, size: 4),
-                                        Multi(color: Colors.black, subtitle: 'Point 3: jbdsnm dsfb d sdb  db dafb sd d  dhbdsbfsdbfbasddbsnmbafnm', weight: FontWeight.w400, size: 4),
-                                         Multi(color: Colors.black, subtitle: 'Point 3: jbdsnm dsfb d sdb  db dafb sd d  dhbdsbfsdbfbasddbsnmbafnm', weight: FontWeight.w400, size: 4)
+                                      Multi(color: Colors.black, subtitle: 'Point 1: babdmsbabdasnf sfnmdbsnmfbasdb sadbfnmdbsfnbanmsd fbdnsmfbndmsaf sdfnmdsbfnmsdabf dnbafnmdbsfnmbsdnmafbnmsdabf dnsbafnmdbsnmafbnmdsbfnmdsbfnmsdb dsfbn ', weight: FontWeight.w400, size: 3),
+                                       Multi(color: Colors.black, subtitle: 'Point 2: afbnmdsbfsdn sdfndsbfndsa sdnbafnmd dsbnmd dsfbsd', weight: FontWeight.w400, size: 3),
+                                        Multi(color: Colors.black, subtitle: 'Point 3: jbdsnm dsfb d sdb  db dafb sd d  dhbdsbfsdbfbasddbsnmbafnm', weight: FontWeight.w400, size: 3),
+                                         Multi(color: Colors.black, subtitle: 'Point 3: jbdsnm dsfb d sdb  db dafb sd d  dhbdsbfsdbfbasddbsnmbafnm', weight: FontWeight.w400, size: 3)
                                     ],
                                   ),
                                 ),
@@ -123,7 +123,7 @@ class TermsAndConditions extends StatelessWidget {
                             Row(
                               children: [
                                 SizedBox(width: 40,),
-                                Multi(color: Colors.black, subtitle: 'Sub Heading 4', weight: FontWeight.w700, size: 7),
+                                Multi(color: Colors.black, subtitle: 'Sub Heading 4', weight: FontWeight.w700, size: 5.5),
                                 IconButton(onPressed: (){}, icon: Icon(Icons.edit))
                               ],
                             ),
@@ -135,10 +135,10 @@ class TermsAndConditions extends StatelessWidget {
                                   child: Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
-                                      Multi(color: Colors.black, subtitle: 'Point 1: babdmsbabdasnf sfnmdbsnmfbasdb sadbfnmdbsfnbanmsd fbdnsmfbndmsaf sdfnmdsbfnmsdabf dnbafnmdbsfnmbsdnmafbnmsdabf dnsbafnmdbsnmafbnmdsbfnmdsbfnmsdb dsfbn ', weight: FontWeight.w400, size: 4),
-                                       Multi(color: Colors.black, subtitle: 'Point 2: afbnmdsbfsdn sdfndsbfndsa sdnbafnmd dsbnmd dsfbsd', weight: FontWeight.w400, size: 4),
-                                        Multi(color: Colors.black, subtitle: 'Point 3: jbdsnm dsfb d sdb  db dafb sd d  dhbdsbfsdbfbasddbsnmbafnm', weight: FontWeight.w400, size: 4),
-                                         Multi(color: Colors.black, subtitle: 'Point 3: jbdsnm dsfb d sdb  db dafb sd d  dhbdsbfsdbfbasddbsnmbafnm', weight: FontWeight.w400, size: 4)
+                                      Multi(color: Colors.black, subtitle: 'Point 1: babdmsbabdasnf sfnmdbsnmfbasdb sadbfnmdbsfnbanmsd fbdnsmfbndmsaf sdfnmdsbfnmsdabf dnbafnmdbsfnmbsdnmafbnmsdabf dnsbafnmdbsnmafbnmdsbfnmdsbfnmsdb dsfbn ', weight: FontWeight.w400, size: 3),
+                                       Multi(color: Colors.black, subtitle: 'Point 2: afbnmdsbfsdn sdfndsbfndsa sdnbafnmd dsbnmd dsfbsd', weight: FontWeight.w400, size: 3),
+                                        Multi(color: Colors.black, subtitle: 'Point 3: jbdsnm dsfb d sdb  db dafb sd d  dhbdsbfsdbfbasddbsnmbafnm', weight: FontWeight.w400, size: 3),
+                                         Multi(color: Colors.black, subtitle: 'Point 3: jbdsnm dsfb d sdb  db dafb sd d  dhbdsbfsdbfbasddbsnmbafnm', weight: FontWeight.w400, size: 3)
                                     ],
                                   ),
                                 ),
@@ -147,7 +147,7 @@ class TermsAndConditions extends StatelessWidget {
                             Row(
                               children: [
                                 SizedBox(width: 40,),
-                                Multi(color: Colors.black, subtitle: 'Sub Heading 5', weight: FontWeight.w700, size: 7),
+                                Multi(color: Colors.black, subtitle: 'Sub Heading 5', weight: FontWeight.w700, size: 5.5),
                                 IconButton(onPressed: (){}, icon: Icon(Icons.edit))
                               ],
                             ),
@@ -159,10 +159,10 @@ class TermsAndConditions extends StatelessWidget {
                                   child: Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
-                                      Multi(color: Colors.black, subtitle: 'Point 1: babdmsbabdasnf sfnmdbsnmfbasdb sadbfnmdbsfnbanmsd fbdnsmfbndmsaf sdfnmdsbfnmsdabf dnbafnmdbsfnmbsdnmafbnmsdabf dnsbafnmdbsnmafbnmdsbfnmdsbfnmsdb dsfbn ', weight: FontWeight.w400, size: 4),
-                                       Multi(color: Colors.black, subtitle: 'Point 2: afbnmdsbfsdn sdfndsbfndsa sdnbafnmd dsbnmd dsfbsd', weight: FontWeight.w400, size: 4),
-                                        Multi(color: Colors.black, subtitle: 'Point 3: jbdsnm dsfb d sdb  db dafb sd d  dhbdsbfsdbfbasddbsnmbafnm', weight: FontWeight.w400, size: 4),
-                                         Multi(color: Colors.black, subtitle: 'Point 3: jbdsnm dsfb d sdb  db dafb sd d  dhbdsbfsdbfbasddbsnmbafnm', weight: FontWeight.w400, size: 4)
+                                      Multi(color: Colors.black, subtitle: 'Point 1: babdmsbabdasnf sfnmdbsnmfbasdb sadbfnmdbsfnbanmsd fbdnsmfbndmsaf sdfnmdsbfnmsdabf dnbafnmdbsfnmbsdnmafbnmsdabf dnsbafnmdbsnmafbnmdsbfnmdsbfnmsdb dsfbn ', weight: FontWeight.w400, size: 3),
+                                       Multi(color: Colors.black, subtitle: 'Point 2: afbnmdsbfsdn sdfndsbfndsa sdnbafnmd dsbnmd dsfbsd', weight: FontWeight.w400, size: 3),
+                                        Multi(color: Colors.black, subtitle: 'Point 3: jbdsnm dsfb d sdb  db dafb sd d  dhbdsbfsdbfbasddbsnmbafnm', weight: FontWeight.w400, size: 3),
+                                         Multi(color: Colors.black, subtitle: 'Point 3: jbdsnm dsfb d sdb  db dafb sd d  dhbdsbfsdbfbasddbsnmbafnm', weight: FontWeight.w400, size: 3)
                                     ],
                                   ),
                                 ),

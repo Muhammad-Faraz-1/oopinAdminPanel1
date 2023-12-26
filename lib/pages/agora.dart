@@ -198,8 +198,8 @@ class Agora extends StatelessWidget {
             ),
             SizedBox(height: 10,),
             Container(
-                  height: screenHeight/1.9,
-                  width: screenWidth/1.09,
+                  height: screenHeight/2,
+                  width: screenWidth/1.2,
                   decoration: BoxDecoration(
                           // borderRadius: BorderRadius.circular(15),
                           color: Colors.white,
@@ -225,7 +225,7 @@ class Agora extends StatelessWidget {
                                   ),
                                     
                                   DataTable(
-                                    columnSpacing: screenWidth/13,
+                                    columnSpacing: screenWidth/15,
                                   
                                     columns: [
                                     DataColumn(label: Multi(color: Colors.black, subtitle: 'Date', weight: FontWeight.w500, size: 4)),

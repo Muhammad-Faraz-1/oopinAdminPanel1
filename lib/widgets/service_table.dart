@@ -15,7 +15,7 @@ class ServiceTable extends StatelessWidget {
     double screenHeight = MediaQuery.of(context).size.height;
     return Container(
       height: screenHeight / 1.30,
-      width: screenWidth / 1.01,
+      width: screenWidth / 1.03,
       child: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,

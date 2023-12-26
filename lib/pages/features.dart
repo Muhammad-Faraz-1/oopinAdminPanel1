@@ -127,7 +127,7 @@ class Features extends StatelessWidget {
                             ),
                             Container(
                               height: screenHeight / 21.7,
-                              width: screenWidth / 6.86,
+                              width: screenWidth / 7,
                               child: TextFormField(
                                 // controller: name_service,
                                 cursorColor: Colors.black,

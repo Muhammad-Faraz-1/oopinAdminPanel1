@@ -13,8 +13,8 @@ class VideoArea extends StatelessWidget {
     return Container(
       // height: 240,
       // width: 320,
-      height: screenHeight/2.7,
-      width: screenWidth/4.2,
+      height: screenHeight/2.8,
+      width: screenWidth/4.5,
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(15),
           color: Color.fromARGB(255, 255, 255, 255)),
@@ -35,7 +35,7 @@ class VideoArea extends StatelessWidget {
                 Row(
                   children: [
                     Container(
-                          height: screenHeight/18.6,
+                          height: screenHeight/19.5,
                           width: screenWidth/39,
                           child: const CircleAvatar(
                             radius: 25,
@@ -50,17 +50,17 @@ class VideoArea extends StatelessWidget {
                     color: Color.fromARGB(255, 0, 0, 0),
                     subtitle: 'Suggests to Sami',
                     weight: FontWeight.w500,
-                    size: 5),
+                    size: 4),
                      Multi(
                     color: Color.fromARGB(255, 0, 0, 0),
                     subtitle: 'Faraz',
                     weight: FontWeight.w500,
-                    size: 3),
+                    size: 2.5),
                      Multi(
                     color: Color.fromARGB(255, 0, 0, 0),
                     subtitle: 'Date: 12/Dec/2023',
                     weight: FontWeight.w500,
-                    size: 3),
+                    size: 2.5),
                   ],
                 ),
                   ],
@@ -75,10 +75,10 @@ class VideoArea extends StatelessWidget {
                       value: 0,
                       child: Row(children: [
                         Container(
-                          height: screenHeight/22.5,
-                          width: screenWidth/66.8,
-                          child: Image.asset('assets/queue.png')),SizedBox(width: screenWidth/36.6,),
-                        Multi(color: const Color.fromARGB(255, 0, 0, 0), subtitle: 'Add to Queue', weight: FontWeight.w500, size: 4),
+                          height: screenHeight/23,
+                          width: screenWidth/67,
+                          child: Image.asset('assets/queue.png')),SizedBox(width: screenWidth/37,),
+                        Multi(color: const Color.fromARGB(255, 0, 0, 0), subtitle: 'Add to Queue', weight: FontWeight.w500, size: 3),
                       ],),
                   ),
                 
@@ -86,10 +86,10 @@ class VideoArea extends StatelessWidget {
                       value: 1,
                       child: Row(children: [
                         Container(
-                          height: screenHeight/22.5,
-                          width: screenWidth/66.8,
-                          child: Image.asset('assets/download.png')),SizedBox(width:  screenWidth/36.6,),
-                        Multi(color: const Color.fromARGB(255, 0, 0, 0), subtitle: 'Download', weight: FontWeight.w500, size: 4),
+                          height: screenHeight/23,
+                          width: screenWidth/67,
+                          child: Image.asset('assets/download.png')),SizedBox(width:  screenWidth/37,),
+                        Multi(color: const Color.fromARGB(255, 0, 0, 0), subtitle: 'Download', weight: FontWeight.w500, size: 3),
                       ],),
                   ),
                 
@@ -97,10 +97,10 @@ class VideoArea extends StatelessWidget {
                       value: 2,
                       child: Row(children: [
                         Container(
-                          height: screenHeight/22.5,
-                          width: screenWidth/66.8,
-                          child: Image.asset('assets/share.png')),SizedBox(width:  screenWidth/36.6,),
-                        Multi(color: const Color.fromARGB(255, 0, 0, 0), subtitle: 'Share', weight: FontWeight.w500, size: 4),
+                          height: screenHeight/23,
+                          width: screenWidth/67,
+                          child: Image.asset('assets/share.png')),SizedBox(width:  screenWidth/37,),
+                        Multi(color: const Color.fromARGB(255, 0, 0, 0), subtitle: 'Share', weight: FontWeight.w500, size: 3),
                       ],),
                   ),
                         ];

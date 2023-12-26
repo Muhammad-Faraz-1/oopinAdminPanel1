@@ -24,8 +24,8 @@ class VideoInfo extends StatelessWidget {
                 spreadRadius: 2,
                 offset: const Offset(2, 2))
           ]),
-      height: screenHeight / 6.51,
-      width: screenWidth / 6.83,
+      height: screenHeight / 6.8,
+      width: screenWidth / 8,
       child: Padding(
         padding: const EdgeInsets.all(10),
         child: Column(
@@ -33,8 +33,8 @@ class VideoInfo extends StatelessWidget {
             Multi(
                 color: Colors.black,
                 subtitle: name!,
-                weight: FontWeight.w300,
-                size: 5),
+                weight: FontWeight.w400,
+                size: 4.5),
             SizedBox(
               height: 10,
             ),
@@ -55,12 +55,12 @@ class VideoInfo extends StatelessWidget {
                         color: Colors.black,
                         subtitle: '50 ',
                         weight: FontWeight.w600,
-                        size: 6),
+                        size: 5),
                     Multi(
                         color: Colors.black,
                         subtitle: 'Minutes',
                         weight: FontWeight.w400,
-                        size: 4.5),
+                        size: 4),
                   ],
                 ),
 
